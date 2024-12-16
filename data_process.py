@@ -115,5 +115,8 @@ def process_file(file_path, stockfish_path, set_name, time_limit=0.1, max_worker
     features = game_fens
     labels = [[{'type': move['type'], 'value': move['value']} for move in game] for game in all_evaluations]
 
+    # File number
+    file_nb = file_path.split('/')[2].split('split_')[1].split('.')[0]
+
     # Export features and labels
-    export_features_labels(set_name, features, labels, unroll=False)
+    export_features_labels(set_name, file_nb, features, labels, unroll=False)
