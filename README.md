@@ -1,6 +1,6 @@
-# Chess
+# Chess Bot
 
-The aim of this project is to develop a neural network capable of evaluating chess positions. The project is still in its infancy, and is currently under development.
+The aim of this project is to develop a neural network capable of evaluating chess positions. The project is still in its infancy and is currently under development.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -12,6 +12,10 @@ The aim of this project is to develop a neural network capable of evaluating che
   - [get_raw_fen](#get_raw_fen)
   - [process_game](#process_game)
   - [process_file](#process_file)
+  - [fen_to_matrix](#fen_to_matrix)
+  - [flatten_data](#flatten_data)
+  - [normalize_evaluation](#normalize_evaluation)
+  - [split_pgn](#split_pgn)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -28,10 +32,11 @@ The aim of this project is to develop a neural network capable of evaluating che
     pip install -r requirements.txt
     ```
 
-## Current features
+3. Download and install [Stockfish](https://stockfishchess.org/download/) (or use the .zip provided here)
 
-I am currently handling the data formatting in order to have usable train and validation datasets for later use. I am also still debating the architecture of the future neural network.\\
-At the moment, the data is saved to json files, but I would like to switch to a more efficient format, such as HDF5. Multithreading was added when processing large amouts of games.
+## Current Features
+
+Data formatting has been solved. Each input feature is a 8x8x12 matrix. (8x8 is the chessboard, 12 is 1 channel / piece, 1 if there's a piece, 0 else). My first try is a CNN + 2 Dense layers network. Still in the process of testing it on different datasets. Will update when I come up with something.
 
 ## Usage
 
@@ -48,6 +53,27 @@ At the moment, the data is saved to json files, but I would like to switch to a 
     from data_process import process_file
 
     process_file('path/to/your/file.pgn', 'path/to/stockfish', 'dataset_name')
+    ```
+
+3. Split a PGN file into smaller files:
+    ```python
+    from utils import split_pgn
+
+    split_files = split_pgn('path/to/your/file.pgn', num_files=10)
+    print(f"Split files: {split_files}")
+    ```
+
+4. Convert FEN to matrix and normalize evaluations:
+    ```python
+    from utils import fen_to_matrix, normalize_evaluation
+
+    fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
+    matrix = fen_to_matrix(fen)
+    print(matrix)
+
+    evaluation = {"type": "centipawn", "value": 34}
+    normalized_value = normalize_evaluation(evaluation)
+    print(normalized_value)
     ```
 
 ## Functions
@@ -68,6 +94,7 @@ Exports the features (board positions) and the labels (evaluation scores) to JSO
 
 **Args:**
 - `set_name` (str): Name of the dataset.
+- `file_nb` (int): Number of the file being processed.
 - `features` (list of lists): List of board positions.
 - `labels` (list of lists): List of evaluation scores.
 - `unroll` (bool): Whether to unroll the features and labels into a single list.
@@ -123,10 +150,56 @@ Processes a PGN file in parallel and saves features and labels to JSON (or HDF5 
 - `time_limit` (float): Maximum time Stockfish can take for each evaluation.
 - `max_workers` (int): Maximum number of threads to use for parallel processing.
 
-## Exemples
-The `processed/`directory contains the processed versions of the `datasets/classical_2000_0124.pgn`and `datasets/test_double.pgn`files. The first one contains all the classical games of 2000 > rated players played on lichess during January, 2024. The second one is just a sample of that file that I used for tests.\\
+### fen_to_matrix
 
-It took approximatively 20 mins to process a bit more than 1000 games using 4 workers. It is still relatively slow, but keep in mind that this process will be needed once for each dataset.
+Convert a FEN string into an 8x8x12 matrix representation.
+
+**Args:**
+- `fen` (str): FEN string describing the board state.
+
+**Returns:**
+- `np.ndarray`: 8x8x12 tensor representing the board.
+
+### flatten_data
+
+Flattens the features and labels.
+
+**Args:**
+- `features` (list of lists): List of board positions.
+- `labels` (list of lists): List of evaluation scores.
+
+**Returns:**
+- `flat_features` (np.array): Flattened features.
+- `flat_labels` (np.array): Flattened labels.
+
+### normalize_evaluation
+
+Normalize evaluation values to the range [-1, 1].
+
+**Args:**
+- `evaluation` (dict): The evaluation dictionary from evaluate_position.
+- `max_centipawn` (int): Maximum centipawn value for normalization.
+- `max_mate_distance` (int): Maximum mate distance for normalization.
+
+**Returns:**
+- `float`: Normalized evaluation value.
+
+### split_pgn
+
+Splits a PGN file into smaller files, each containing an equal number of games.
+
+**Args:**
+- `input_pgn_file` (str): Path to the input PGN file.
+- `num_files` (int): Number of files to split the games into.
+
+**Returns:**
+- `list of str`: Paths to the split PGN files.
+
+## Examples
+
+The `processed/` directory contains the processed versions of the `datasets/classical_2000_0124.pgn` and `datasets/test_double.pgn` files. The first one contains all the classical games of 2000+ rated players played on Lichess during January 2024. The second one is just a sample of that file that I used for tests.
+
+It took approximately 20 minutes to process a bit more than 1000 games using 4 workers. It is still relatively slow, but keep in mind that this process will be needed once for each dataset.
 
 ## Contributing
 
