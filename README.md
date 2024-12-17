@@ -76,6 +76,25 @@ Data formatting has been solved. Each input feature is a 8x8x12 matrix. (8x8 is 
     print(normalized_value)
     ```
 
+5. Train and compare models:
+    ```python
+    from CNN_flat import build_model, compare_models
+    import tensorflow as tf
+
+    # Build and train models
+    model1 = build_model()
+    model2 = build_model()
+    model3 = build_model()
+
+    # Save models
+    model1.save('models/cnn_model1.keras')
+    model2.save('models/cnn_model2.keras')
+    model3.save('models/cnn_model3.keras')
+
+    # Compare models
+    compare_models(model1, model2, model3)
+    ```
+
 ## Functions
 
 ### clean_pgn
