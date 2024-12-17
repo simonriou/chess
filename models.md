@@ -1,0 +1,10 @@
+# Models information
+- `cnn_model1` was trained with a small amount of positions (approx. 1000) and
+    - 2 Conv. layers (32 and 64, 3x3 kernels, same padding) with batch normalization and ReLu activation.
+    - 2 Dense layers (128 and 64), ReLu activated
+    - Adam optimizer (0.001 learning rate)
+    - LMSE
+    - 64 batch size
+    - 0.2 validation split
+    - 10 epochs
+- `cnn_model2` was trained using the same parameters, but with a larger dataset

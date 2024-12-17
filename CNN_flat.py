@@ -1,6 +1,7 @@
 from utils import fen_to_matrix, flatten_data, normalize_evaluation
 from evaluate import evaluate_position
 
+import os
 import chess.engine
 import json
 import numpy as np
@@ -13,13 +14,21 @@ from tensorflow.keras.layers import Conv2D, BatchNormalization, Flatten, Dense, 
 from sklearn.model_selection import train_test_split
 
 # Import the data from processed/classical_2000_0124
-features_path = 'processed/classical_2000_0124/features.json'
-labels_path = 'processed/classical_2000_0124/labels.json'
+set_path = 'processed/blitz_2000_23'
+set_name = set_path.split('/')[-1]
 
-with open(features_path, 'r') as f:
-    features = json.load(f)
-with open(labels_path, 'r') as f:
-    labels = json.load(f)
+features = []
+labels = []
+
+# Get every subfolder of set_path
+subfolders = [f.path for f in os.scandir(set_path) if f.is_dir()]
+for folder in subfolders:
+    features_path = f"{folder}/features.json"
+    labels_path = f"{folder}/labels.json"
+    with open(features_path, 'r') as f:
+        features += json.load(f)
+    with open(labels_path, 'r') as f:
+        labels += json.load(f)
 
 features, labels = flatten_data(features, labels)
 
