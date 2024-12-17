@@ -83,10 +83,42 @@ def build_model(input_shape=(8, 8, 12)):
 
     return model
 
-# Check if a model was saved
+def compare_models(model1, model2, model3):
+    """
+    Comapres the performance of three models on the test set.
+
+    Args:
+    - model1: keras.Model, first model to compare
+    - model2: keras.Model, second model to compare
+    - model3: keras.Model, third model to compare
+
+    Returns:
+    - None
+    """
+    # Evaluate the models
+    test_loss1, test_mae1 = model1.evaluate(np.array(X_test), np.array(y_test), batch_size=64)
+    test_loss2, test_mae2 = model2.evaluate(np.array(X_test), np.array(y_test), batch_size=64)
+    test_loss3, test_mae3 = model3.evaluate(np.array(X_test), np.array(y_test), batch_size=64)
+
+    print(f"Model 1 - Test Loss: {test_loss1}, Test MAE: {test_mae1}")
+    print(f"Model 2 - Test Loss: {test_loss2}, Test MAE: {test_mae2}")
+    print(f"Model 3 - Test Loss: {test_loss3}, Test MAE: {test_mae3}")
+
+    # Plot the results
+    plt.figure(figsize=(12, 6))
+    plt.bar(['Model 1', 'Model 2', 'Model 3'], [test_mae1, test_mae2, test_mae3])
+    plt.ylabel('Mean Absolute Error')
+    plt.title('Model Comparison')
+    plt.show()
+
+# Check if models were saved
 try:
-    model = tf.keras.models.load_model('models/cnn_model.keras')
-    print("Model loaded successfully.")
+    model1 = tf.keras.models.load_model('models/cnn_model1.keras')
+    model2 = tf.keras.models.load_model('models/cnn_model2.keras')
+    model3 = tf.keras.models.load_model('models/cnn_model3.keras')
+    print("Models loaded succesfully.")
+
+    compare_models(model1, model2, model3)
 except:
     print("No model found. Building a new model.")
 
@@ -96,7 +128,7 @@ except:
     history = model.fit(
         np.array(X_train), np.array(y_train),
         batch_size=64,
-        epochs=10,
+        epochs=50,
         validation_split=0.2
     )
 
@@ -104,7 +136,7 @@ except:
     model.save('models/cnn_model.keras')
 
 # Evaluate the model
-test_loss, test_mae = model.evaluate(np.array(X_test), np.array(y_test), batch_size=64)
+# test_loss, test_mae = model.evaluate(np.array(X_test), np.array(y_test), batch_size=64)
 
-print(f"Test Loss: {test_loss}")
-print(f"Test Mean Absolute Error (MAE): {test_mae}")
+# print(f"Test Loss: {test_loss}")
+# print(f"Test Mean Absolute Error (MAE): {test_mae}") 
