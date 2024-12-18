@@ -2,5 +2,5 @@ chess==1.11.1
 numpy==2.0.2
 tqdm==4.66.5
 tensorflow==2.18.0
-sklearn==1.5.2
+scikit-learn==1.5.2
 matplotlib==3.4.3
