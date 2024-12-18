@@ -119,6 +119,19 @@ try:
     print("Models loaded succesfully.")
 
     compare_models(model1, model2, model3)
+
+    # Pick a random fen and calculate the evaluation for each model, then compare to the stockfish evaluation
+    idx = np.random.randint(len(X_test))
+    fen = X_test[idx]
+    label = y_test[idx]
+    pred1 = model1.predict(np.array([fen]))[0][0]
+    pred2 = model2.predict(np.array([fen]))[0][0]
+    pred3 = model3.predict(np.array([fen]))[0][0]
+
+    print(f"Stockfish Evaluation: {label} | FEN: {fen}")
+    print(f"Model 1 Prediction: {pred1}")
+    print(f"Model 2 Prediction: {pred2}")
+    print(f"Model 3 Prediction: {pred3}")
 except:
     print("No model found. Building a new model.")
 
