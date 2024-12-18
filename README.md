@@ -21,6 +21,8 @@ The aim of this project is to develop a neural network capable of evaluating che
 
 ## Installation
 
+**Python version** : On macOS, I'm using python `3.12.7`. For some reason, windows doesn't like it and I had to use python `3.10`.
+
 1. Clone the repository:
     ```bash
     git clone https://github.com/simonriou/chess.git
