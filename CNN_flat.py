@@ -113,25 +113,27 @@ def compare_models(model1, model2, model3):
 
 # Check if models were saved
 try:
-    model1 = tf.keras.models.load_model('models/cnn_model1.keras')
-    model2 = tf.keras.models.load_model('models/cnn_model2.keras')
-    model3 = tf.keras.models.load_model('models/cnn_model3.keras')
-    print("Models loaded succesfully.")
+    # model1 = tf.keras.models.load_model('models/cnn_model1.keras')
+    # model2 = tf.keras.models.load_model('models/cnn_model2.keras')
+    # model3 = tf.keras.models.load_model('models/cnn_model3.keras')
+    # print("Models loaded succesfully.")
 
-    compare_models(model1, model2, model3)
+    # compare_models(model1, model2, model3)
 
-    # Pick a random fen and calculate the evaluation for each model, then compare to the stockfish evaluation
-    idx = np.random.randint(len(X_test))
-    fen = X_test[idx]
-    label = y_test[idx]
-    pred1 = model1.predict(np.array([fen]))[0][0]
-    pred2 = model2.predict(np.array([fen]))[0][0]
-    pred3 = model3.predict(np.array([fen]))[0][0]
+    # # Pick a random fen and calculate the evaluation for each model, then compare to the stockfish evaluation
+    # idx = np.random.randint(len(X_test))
+    # fen = X_test[idx]
+    # label = y_test[idx]
+    # pred1 = model1.predict(np.array([fen]))[0][0]
+    # pred2 = model2.predict(np.array([fen]))[0][0]
+    # pred3 = model3.predict(np.array([fen]))[0][0]
 
-    print(f"Stockfish Evaluation: {label} | FEN: {fen}")
-    print(f"Model 1 Prediction: {pred1}")
-    print(f"Model 2 Prediction: {pred2}")
-    print(f"Model 3 Prediction: {pred3}")
+    # print(f"Stockfish Evaluation: {label} | FEN: {fen}")
+    # print(f"Model 1 Prediction: {pred1}")
+    # print(f"Model 2 Prediction: {pred2}")
+    # print(f"Model 3 Prediction: {pred3}")
+
+    model = tf.keras.models.load_model('models/cnn_model.keras')
 except:
     print("No model found. Building a new model.")
 
@@ -147,6 +149,7 @@ except:
 
     # Save the model
     model.save('models/cnn_model.keras')
+    print("Model saved succesfully.")
 
 # Evaluate the model
 # test_loss, test_mae = model.evaluate(np.array(X_test), np.array(y_test), batch_size=64)
