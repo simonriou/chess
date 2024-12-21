@@ -106,6 +106,45 @@ def fen_to_matrix(fen):
     
     return board_matrix
 
+def matrix_to_fen(matrix):
+    """
+    Convert an 8x8x12 matrix representation of a board into a FEN string.
+    
+    Parameters:
+        matrix (np.ndarray): 8x8x12 tensor representing the board.
+        
+    Returns:
+        str: FEN string describing the board state.
+    """
+    # Mapping channel indices to pieces
+    channel_to_piece = {
+        0: 'P', 1: 'N', 2: 'B', 3: 'R', 4: 'Q', 5: 'K',
+        6: 'p', 7: 'n', 8: 'b', 9: 'r', 10: 'q', 11: 'k'
+    }
+    
+    # Initialize an empty FEN string
+    fen = ''
+    
+    # Process each row in the board matrix
+    for rank_idx in range(8):
+        empty_squares = 0
+        for file_idx in range(8):
+            for channel, piece in channel_to_piece.items():
+                if matrix[rank_idx, file_idx, channel] == 1:
+                    if empty_squares > 0:
+                        fen += str(empty_squares)
+                        empty_squares = 0
+                    fen += piece
+                    break
+            else:
+                empty_squares += 1
+        if empty_squares > 0:
+            fen += str(empty_squares)
+        if rank_idx < 7:
+            fen += '/'
+    
+    return fen
+
 def flatten_data(features, labels):
     """
     Flattens the features and labels.

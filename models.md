@@ -9,3 +9,4 @@
     - 10 epochs
 - `cnn_model2` was trained using the same parameters, but with a larger dataset
 - `cnn_model3` was trained using the same dataset as `cnn_model2`, except now on 50 epochs
+- `cnn_model4` is using the new normalization process
