@@ -31,11 +31,19 @@ for folder in subfolders:
         labels += json.load(f)
 
 features, labels = flatten_data(features, labels)
+# Find the max centipawn evaluation (max of labels that have 'type': 'centpawn')
+max_eval = max([label for label in labels if label['type'] == 'centipawn'], key=lambda x: x['value'])['value']
+print(f"Max evaluation: {max_eval}")
+
+# Find the max mate distance (max of labels that have 'type': 'mate'), last character of the string
+max_mate = max([label for label in labels if label['type'] == 'mate'], key=lambda x: x['value'])['value']
+max_mate = int(max_mate[-1])
+print(f"Max mate distance: {max_mate}")
 
 # Convert the FEN strings to matrices
 matrix_features = [fen_to_matrix(fen) for fen in features]
 # Normalize the labels
-normalized_labels = [normalize_evaluation(label) for label in labels]
+normalized_labels = [normalize_evaluation(label, max_centipawn = max_eval, max_mate_distance = max_mate) for label in labels]
 
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(matrix_features, normalized_labels, test_size=0.2, random_state=42)
