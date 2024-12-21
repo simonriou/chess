@@ -165,7 +165,7 @@ def flatten_data(features, labels):
 
 def normalize_evaluation(evaluation, max_centipawn=1000, max_mate_distance=10):
     """
-    Normalize evaluation values to the range [-1, 1] with improved handling.
+    Normalize evaluation values to emphasize forced mates.
 
     Args:
         evaluation (dict): The evaluation dictionary with keys "type" and "value".
@@ -173,7 +173,7 @@ def normalize_evaluation(evaluation, max_centipawn=1000, max_mate_distance=10):
         max_mate_distance (int): Maximum mate distance for normalization.
 
     Returns:
-        float: Normalized evaluation value.
+        float: Normalized evaluation value in the range [-1, 1].
     """
     if "type" not in evaluation or "value" not in evaluation:
         raise ValueError("Invalid evaluation format. Must contain 'type' and 'value' keys.")
@@ -185,14 +185,14 @@ def normalize_evaluation(evaluation, max_centipawn=1000, max_mate_distance=10):
         return max(-1, min(1, normalized))  # Clip to [-1, 1]
 
     elif evaluation["type"] == "mate":
-        # Normalize mate-in values smoothly to [-1, -0.8] or [0.8, 1]
+        # Normalize mate-in values with higher emphasis on close mates
         try:
             mate_in = abs(int(evaluation["value"][1:]))  # Extract mate distance
-            normalized_mate = min(mate_in, max_mate_distance) / max_mate_distance
+            normalized_mate = 1 - (min(mate_in, max_mate_distance) / max_mate_distance)
             if evaluation["value"].startswith("M-"):  # Black mate
-                return max(-1, -1 + normalized_mate * 0.2)  # Map to [-1, -0.8]
+                return -1 + normalized_mate * 0.5  # Map to [-1, -0.5]
             else:  # White mate
-                return min(1, 1 - normalized_mate * 0.2)  # Map to [0.8, 1]
+                return 1 - normalized_mate * 0.5  # Map to [0.5, 1]
         except (ValueError, IndexError):
             raise ValueError("Invalid mate value format. Expected 'M' or 'M-<distance>'.")
     

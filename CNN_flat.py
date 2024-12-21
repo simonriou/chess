@@ -31,19 +31,19 @@ for folder in subfolders:
         labels += json.load(f)
 
 features, labels = flatten_data(features, labels)
-# Find the max centipawn evaluation (max of labels that have 'type': 'centpawn')
-max_eval = max([label for label in labels if label['type'] == 'centipawn'], key=lambda x: x['value'])['value']
-print(f"Max evaluation: {max_eval}")
-
-# Find the max mate distance (max of labels that have 'type': 'mate'), last character of the string
-max_mate = max([label for label in labels if label['type'] == 'mate'], key=lambda x: x['value'])['value']
-max_mate = int(max_mate[-1])
-print(f"Max mate distance: {max_mate}")
 
 # Convert the FEN strings to matrices
 matrix_features = [fen_to_matrix(fen) for fen in features]
 # Normalize the labels
-normalized_labels = [normalize_evaluation(label, max_centipawn = max_eval, max_mate_distance = max_mate) for label in labels]
+normalized_labels = [normalize_evaluation(label, max_centipawn=1000, max_mate_distance = 5) for label in labels]
+
+# Export normalized labels
+with open(f"{set_path}/normalized_labels.json", 'w') as f:
+    json.dump(normalized_labels, f)
+
+# Get index of value -0.9806318847597143 in normalized_labels
+important_idx = normalized_labels.index(-0.9806318847597143)
+print(features[important_idx])
 
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(matrix_features, normalized_labels, test_size=0.2, random_state=42)
@@ -124,43 +124,43 @@ def compare_models(model1, model2, model3, model4):
 
 # Check if models were saved
 try:
-    model1 = tf.keras.models.load_model('models/cnn_model1.keras')
-    model2 = tf.keras.models.load_model('models/cnn_model2.keras')
-    model3 = tf.keras.models.load_model('models/cnn_model3.keras')
-    model4 = tf.keras.models.load_model('models/cnn_model4.keras')
+    # model1 = tf.keras.models.load_model('models/cnn_model1.keras')
+    # model2 = tf.keras.models.load_model('models/cnn_model2.keras')
+    # model3 = tf.keras.models.load_model('models/cnn_model3.keras')
+    # model4 = tf.keras.models.load_model('models/cnn_model4.keras')
 
-    print("Models loaded succesfully.")
+    # print("Models loaded succesfully.")
 
-    compare_models(model1, model2, model3, model4)
+    # compare_models(model1, model2, model3, model4)
 
-    # Pick a random fen and calculate the evaluation for each model, then compare to the stockfish evaluation
-    idx = np.random.randint(len(X_test))
-    fen = X_test[idx]
-    label = y_test[idx]
-    pred1 = model1.predict(np.array([fen]))[0][0]
-    pred2 = model2.predict(np.array([fen]))[0][0]
-    pred3 = model3.predict(np.array([fen]))[0][0]
-    pred4 = model4.predict(np.array([fen]))[0][0]
+    # # Pick a random fen and calculate the evaluation for each model, then compare to the stockfish evaluation
+    # idx = np.random.randint(len(X_test))
+    # fen = X_test[idx]
+    # label = y_test[idx]
+    # pred1 = model1.predict(np.array([fen]))[0][0]
+    # pred2 = model2.predict(np.array([fen]))[0][0]
+    # pred3 = model3.predict(np.array([fen]))[0][0]
+    # pred4 = model4.predict(np.array([fen]))[0][0]
 
-    print(f"Stockfish Evaluation: {label} | FEN: {matrix_to_fen(fen)}")
-    print(f"Model 1 Prediction: {pred1}")
-    print(f"Model 2 Prediction: {pred2}")
-    print(f"Model 3 Prediction: {pred3}")
-    print(f"Model 4 Prediction: {pred4}")
+    # print(f"Stockfish Evaluation: {label} | FEN: {matrix_to_fen(fen)}")
+    # print(f"Model 1 Prediction: {pred1}")
+    # print(f"Model 2 Prediction: {pred2}")
+    # print(f"Model 3 Prediction: {pred3}")
+    # print(f"Model 4 Prediction: {pred4}")
 
-    # Pick a fen that has mate in 3
-    mate_fen = np.array([fen_to_matrix('8/8/8/8/8/4R3/3QK3/7k w - - 0 1')])
-    pred1 = model1.predict(mate_fen)[0][0]
-    pred2 = model2.predict(mate_fen)[0][0]
-    pred3 = model3.predict(mate_fen)[0][0]
-    pred4 = model4.predict(mate_fen)[0][0]
+    # # Pick a fen that has mate in 1
+    # mate_fen = np.array([fen_to_matrix('1nkr3r/1ppqb3/4b3/1P1ppp2/Q5p1/2PPB1P1/P2NP1B1/R3NRK1 w - ')])
+    # pred1 = model1.predict(mate_fen)[0][0]
+    # pred2 = model2.predict(mate_fen)[0][0]
+    # pred3 = model3.predict(mate_fen)[0][0]
+    # pred4 = model4.predict(mate_fen)[0][0]
 
-    print(f"Model 1 Prediction (Mate in 2): {pred1}")
-    print(f"Model 2 Prediction (Mate in 2): {pred2}")
-    print(f"Model 3 Prediction (Mate in 2): {pred3}")
-    print(f"Model 4 Prediction (Mate in 2): {pred4}")
+    # print(f"Model 1 Prediction (Mate in 1): {pred1}")
+    # print(f"Model 2 Prediction (Mate in 1): {pred2}")
+    # print(f"Model 3 Prediction (Mate in 1): {pred3}")
+    # print(f"Model 4 Prediction (Mate in 1): {pred4}")
 
-    # model = tf.keras.models.load_model('models/cnn_model.keras')
+    model = tf.keras.models.load_model('models/cnn_model.keras')
 except:
     print("No model found. Building a new model.")
 
