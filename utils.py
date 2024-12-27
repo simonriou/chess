@@ -71,6 +71,8 @@ def export_features_labels(set_name, file_nb, features, labels, unroll=True):
 def fen_to_matrix(fen):
     """
     Convert a FEN string into an 8x8x12 matrix representation.
+    8x8 is the chessboard
+    12 is 1 channel per piece (12)
     
     Parameters:
         fen (str): FEN string describing the board state.
@@ -91,19 +93,19 @@ def fen_to_matrix(fen):
     board_part, _ = fen.split(' ', 1)
     
     # Process each row in the FEN board part
-    rows = board_part.split('/')
-    for rank_idx, row in enumerate(rows):
-        file_idx = 0
-        for char in row:
-            if char.isdigit():
-                # Empty squares
-                file_idx += int(char)
-            else:
-                # Map the piece to the appropriate channel
-                channel = piece_to_channel[char]
-                board_matrix[rank_idx, file_idx, channel] = 1
-                file_idx += 1
-    
+    rank_idx = 0
+    file_idx = 0
+    for char in board_part:
+        if char == '/':
+            rank_idx += 1
+            file_idx = 0
+        elif char.isdigit():
+            file_idx += int(char)
+        else:
+            channel = piece_to_channel[char]
+            board_matrix[rank_idx, file_idx, channel] = 1
+            file_idx += 1
+
     return board_matrix
 
 def matrix_to_fen(matrix):
