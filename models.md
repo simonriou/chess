@@ -9,4 +9,13 @@
     - 10 epochs
 - `cnn_model2` was trained using the same parameters, but with a larger dataset
 - `cnn_model3` was trained using the same dataset as `cnn_model2`, except now on 50 epochs
-- `cnn_model4` is using the new normalization process
+- `cnn_model4` is using the new normalization process for evaluations
+- `cnn_model5` is using yet another normalization process
+- `cnn_model6` has double input (matrix feature and turn feature), as well as the following parameters:
+    - 2 Conv. layers (32 & 64, 3x3, same) w/ batch normalization & ReLu activation, for the matrix features only
+    - Flattens the result
+    - Concatenates it with the turn feature (scalar)
+    - 2 Dense layers
+    - Adam optmizer, mae and accuracy metrics
+    - 32 batch size
+    - 20 epochs

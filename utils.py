@@ -68,7 +68,7 @@ def export_features_labels(set_name, file_nb, features, labels, unroll=True):
 
     return features_path, labels_path
 
-def fen_to_matrix(fen):
+def fen_to_features(fen):
     """
     Convert a FEN string into an 8x8x12 matrix representation.
     8x8 is the chessboard
@@ -79,6 +79,7 @@ def fen_to_matrix(fen):
         
     Returns:
         np.ndarray: 8x8x12 tensor representing the board.
+        int: 1 if it's white's turn, -1 if it's black
     """
     # Mapping pieces to channel indices
     piece_to_channel = {
@@ -91,6 +92,9 @@ def fen_to_matrix(fen):
     
     # Split FEN into board part and metadata
     board_part, _ = fen.split(' ', 1)
+
+    # Determine whose turn it is
+    turn = 1 if fen.split(' ')[1] == 'w' else -1
     
     # Process each row in the FEN board part
     rank_idx = 0
@@ -106,7 +110,7 @@ def fen_to_matrix(fen):
             board_matrix[rank_idx, file_idx, channel] = 1
             file_idx += 1
 
-    return board_matrix
+    return [board_matrix, turn]
 
 def matrix_to_fen(matrix):
     """
