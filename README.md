@@ -5,6 +5,7 @@ The aim of this project is to develop a neural network capable of evaluating che
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Performances](#performances)
 - [Functions](#functions)
   - [clean_pgn](#clean_pgn)
   - [export_features_labels](#export_features_labels)
@@ -97,6 +98,14 @@ Recently added support for double input in the CNN -> flat model (one for the bo
     # Compare models
     compare_models([model1, model2, model3])
     ```
+
+## Performances
+
+At the moment, the most efficient model is **Model number 6**, as you can see below:
+
+![single_vs_double](media/single_vs_double.png)
+
+![batch_size](media/batch_size.png)
 
 ## Functions
 
