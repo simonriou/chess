@@ -12,7 +12,8 @@ The aim of this project is to develop a neural network capable of evaluating che
   - [get_raw_fen](#get_raw_fen)
   - [process_game](#process_game)
   - [process_file](#process_file)
-  - [fen_to_matrix](#fen_to_matrix)
+  - [fen_to_features](#fen_to_features)
+  - [matrix_to_fen](#matrix_to_fen)
   - [flatten_data](#flatten_data)
   - [normalize_evaluation](#normalize_evaluation)
   - [split_pgn](#split_pgn)
@@ -38,7 +39,7 @@ The aim of this project is to develop a neural network capable of evaluating che
 
 ## Current Features
 
-Data formatting has been solved. Each input feature is a 8x8x12 matrix. (8x8 is the chessboard, 12 is 1 channel / piece, 1 if there's a piece, 0 else). My first try is a CNN + 2 Dense layers network. Still in the process of testing it on different datasets. Will update when I come up with something.
+Recently added support for double input in the CNN -> flat model (one for the board matrix, one for the turn, scalar). Working on tuning parameters to the best. Also thinking about another model architecture for the future.
 
 ## Usage
 
@@ -67,11 +68,11 @@ Data formatting has been solved. Each input feature is a 8x8x12 matrix. (8x8 is 
 
 4. Convert FEN to matrix and normalize evaluations:
     ```python
-    from utils import fen_to_matrix, normalize_evaluation
+    from utils import fen_to_features, normalize_evaluation
 
     fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
-    matrix = fen_to_matrix(fen)
-    print(matrix)
+    matrix, turn = fen_to_features(fen)
+    print(matrix, turn)
 
     evaluation = {"type": "centipawn", "value": 34}
     normalized_value = normalize_evaluation(evaluation)
@@ -80,7 +81,7 @@ Data formatting has been solved. Each input feature is a 8x8x12 matrix. (8x8 is 
 
 5. Train and compare models:
     ```python
-    from CNN_flat import build_model, compare_models
+    from CNN_flat_single_input import build_model, compare_models
     import tensorflow as tf
 
     # Build and train models
@@ -94,7 +95,7 @@ Data formatting has been solved. Each input feature is a 8x8x12 matrix. (8x8 is 
     model3.save('models/cnn_model3.keras')
 
     # Compare models
-    compare_models(model1, model2, model3)
+    compare_models([model1, model2, model3])
     ```
 
 ## Functions
@@ -171,15 +172,26 @@ Processes a PGN file in parallel and saves features and labels to JSON (or HDF5 
 - `time_limit` (float): Maximum time Stockfish can take for each evaluation.
 - `max_workers` (int): Maximum number of threads to use for parallel processing.
 
-### fen_to_matrix
+### fen_to_features
 
-Convert a FEN string into an 8x8x12 matrix representation.
+Convert a FEN string into an 8x8x12 matrix representation and a turn indicator.
 
 **Args:**
 - `fen` (str): FEN string describing the board state.
 
 **Returns:**
 - `np.ndarray`: 8x8x12 tensor representing the board.
+- `int`: 1 if it's white's turn, -1 if it's black's turn.
+
+### matrix_to_fen
+
+Convert an 8x8x12 matrix representation of a board into a FEN string.
+
+**Args:**
+- `matrix` (np.ndarray): 8x8x12 tensor representing the board.
+
+**Returns:**
+- `str`: FEN string describing the board state.
 
 ### flatten_data
 
@@ -221,6 +233,8 @@ Splits a PGN file into smaller files, each containing an equal number of games.
 The `processed/` directory contains the processed versions of the `datasets/classical_2000_0124.pgn` and `datasets/test_double.pgn` files. The first one contains all the classical games of 2000+ rated players played on Lichess during January 2024. The second one is just a sample of that file that I used for tests.
 
 It took approximately 20 minutes to process a bit more than 1000 games using 4 workers. It is still relatively slow, but keep in mind that this process will be needed once for each dataset.
+
+The `CNN_flat` files (single and double) are the two first models. They contain functions that train and compare the different models. Their performances can also be vizualized using the `performances/single_vs_double.py` script.
 
 ## Contributing
 
