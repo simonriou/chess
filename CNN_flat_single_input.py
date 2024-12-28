@@ -131,7 +131,7 @@ def compare_models(models):
         print(f"Model {i + 1} Prediction: {pred}")
 
     # Evaluate a specific position
-    mate_fen = np.array([fen_to_features('1nkr3r/1ppqb3/4b3/1P1ppp2/Q5p1/2PPB1P1/P2NP1B1/R3NRK1 w - ')[0]])
+    mate_fen = np.array([fen_to_features('1nkr3r/1ppqb3/4b3/1P1ppp2/Q5p1/2PPB1P1/P2NP1B1/R3NRK1 w - ')])
     predictions = []
     for model in models:
         predictions.append(model.predict(mate_fen)[0][0])

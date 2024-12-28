@@ -174,12 +174,12 @@ def normalize_evaluation(evaluation, max_centipawn=1000, max_mate_distance=10):
     Normalize evaluation values to emphasize forced mates.
 
     Args:
-        evaluation (dict): The evaluation dictionary with keys "type" and "value".
-        max_centipawn (int): Maximum centipawn value for normalization.
-        max_mate_distance (int): Maximum mate distance for normalization.
+    - evaluation (dict): The evaluation dictionary with keys "type" and "value".
+    - max_centipawn (int): Maximum centipawn value for normalization.
+    - max_mate_distance (int): Maximum mate distance for normalization.
 
     Returns:
-        float: Normalized evaluation value in the range [-1, 1].
+    - float: Normalized evaluation value in the range [-1, 1].
     """
     if "type" not in evaluation or "value" not in evaluation:
         raise ValueError("Invalid evaluation format. Must contain 'type' and 'value' keys.")
@@ -205,6 +205,21 @@ def normalize_evaluation(evaluation, max_centipawn=1000, max_mate_distance=10):
     else:
         # Unknown evaluation type
         return 0.0
+
+def denormalize(evaluation, max_centipawn=1000, max_mate_distance=10):
+    """
+    De-normalizes a label.
+
+    Args:
+    - evaluation (float): The normalized eval.
+    - max_centipawn (int): Maximum centipawn value.
+    - max_mate_distance (int): Maximum mate distance.
+
+    Returns:
+    - float: The de-normalized evaluation.
+    """
+    denorm = max_centipawn * evaluation
+    return denorm
 
 def split_pgn(input_pgn_file, num_files):
     """

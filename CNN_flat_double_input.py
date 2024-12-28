@@ -1,4 +1,4 @@
-from utils import fen_to_features, flatten_data, normalize_evaluation, matrix_to_fen
+from utils import fen_to_features, flatten_data, normalize_evaluation, matrix_to_fen, denormalize
 from evaluate import evaluate_position
 
 import os
@@ -118,12 +118,15 @@ def compare_models(models):
 
     # Evaluate each model on the test set
     for i, model in enumerate(models):
+        # If it's the first model, batch size is 32, else 64
+        batch_size = 32 if i == 0 else 64
         # Evaluate the model
         test_loss, test_accuracy, test_mae = model.evaluate([X_test_matrix, X_test_turn], y_test, batch_size=64)
         print(f"Model {i + 1} Test Loss: {test_loss} | Test Accuracy: {test_accuracy} | Test MAE: {test_mae}")
-        performances[f"Model {i + 1} (double)"] = {
+        performances[f"Model {i + 1} ({batch_size})"] = {
             "Test Loss": test_loss,
-            "Test MAE": test_mae
+            "Test MAE": test_mae,
+            "Test Accuracy": test_accuracy
         }
         results[f"Model {i + 1}"] = test_mae
 
@@ -133,24 +136,29 @@ def compare_models(models):
     plt.title('Model Comparison')
     plt.show()
 
-    # Pick a random fen and calculate the evaluation for each model, then compare to the stockfish evaluation
-    idx = np.random.randint(len(X_test_matrix))
-    fen = X_test_matrix[idx]
-    turn = X_test_turn[idx]
-    print(f"Stockfish Evaluation: {y_test[idx]} | FEN: {fen} | Turn: {turn}")
-    label = y_test[idx]
+    # Pick a few random fens that have > 0.5 or < -0.5 eval and calculate the evaluation for each model, then compare to the stockfish evaluation
+    indices = np.where((y_test > 0.5) | (y_test < -0.5))[0][:5]
+    fens = X_test_matrix[indices]
+    turns = X_test_turn[indices]
+    labels = y_test[indices]
 
     predictions = []
 
-    for model in models:
-        predictions.append(model.predict([np.array([fen]), np.array([turn])])[0][0])
+    # For each random fen and turn
+    for fen, turn in zip(fens, turns):
+        fen_pred = []
+        for model in models: # For each model
+            fen_pred.append(model.predict([np.array([fen]), np.array([turn])])[0][0]) # Predict the evaluation
+        predictions.append(fen_pred)
 
-    print(f"Stockfish Evaluation: {label} | FEN: {matrix_to_fen(fen)}")
-    for i, pred in enumerate(predictions):
-        print(f"Model {i + 1} Prediction: {pred}")
+    # Display the results
+    for i, (fen, turn, label, preds) in enumerate(zip(fens, turns, labels, predictions)):
+        print(f"Stockfish Evaluation: {label} (Real: {denormalize(label)/100:.2f}) | FEN: {matrix_to_fen(fen)} | Turn: {turn}")
+        for j, pred in enumerate(preds):
+            print(f"Model {j + 6} Prediction: {pred:.2f} | Real eval: {denormalize(pred)/100:.2f}")
 
     # Export the results to a JSON file
-    with open('performances/single_vs_double.json', 'a') as f:
+    with open('performances/batch_size.json', 'a') as f:
         json.dump(performances, f)
         f.write('\n')
 
@@ -188,5 +196,10 @@ def train_model(model, X_t, y_t, X_v, y_v, epochs=20, batch_size=32):
     
     return history
 
+# Load models
 m6 = tf.keras.models.load_model('models/cnn_model6.keras')
-compare_models([m6])
+m7 = tf.keras.models.load_model('models/cnn_model7.keras')
+m8 = tf.keras.models.load_model('models/cnn_model8.keras')
+
+# Compare models
+compare_models([m6, m7, m8])

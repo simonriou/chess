@@ -19,3 +19,5 @@
     - Adam optmizer, mae and accuracy metrics
     - 32 batch size
     - 20 epochs
+- `cnn_model7`'s goal is to check the impact of the batch size on the performances. Batch size switched to 64.
+- `cnn_model8`: same, batch size switched to 128.
