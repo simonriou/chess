@@ -2,6 +2,8 @@
 
 The aim of this project is to develop a neural network capable of evaluating chess positions. The project is still in its infancy and is currently under development.
 
+**Note that the windows compatibility of this program has not been checked yet. It is however working fine on MacOS.**
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
