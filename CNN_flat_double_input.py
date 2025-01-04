@@ -66,7 +66,7 @@ def build_model(input_shape=(8, 8, 12)):
 
     # Input for the board features
     board_input = Input(shape=input_shape, name='board_input')
-    x = Conv2D(32, kernel_size=(3, 3), padding='same')(board_input)
+    x = Conv2D(32, kernel_size=(5, 5), padding='same')(board_input)
     x = BatchNormalization()(x)
     x = Activation('relu')(x)
     x = Conv2D(64, kernel_size=(3, 3), padding='same')(x)
@@ -106,7 +106,7 @@ def compare_models(models):
     Also exports the performances (Loss, MAE) to a JSON file (append and not overwrite).
 
     Args:
-    - models: list of keras.Model, the models to compare
+    - models: list of keras.Model, the models to compare (format is mX, mY, mZ)
 
     Returns:
     - None
@@ -158,7 +158,7 @@ def compare_models(models):
             print(f"Model {j + 6} Prediction: {pred:.2f} | Real eval: {denormalize(pred)/100:.2f}")
 
     # Export the results to a JSON file
-    with open('performances/batch_size.json', 'a') as f:
+    with open('performances/kernels.json', 'w') as f:
         json.dump(performances, f)
         f.write('\n')
 
@@ -196,10 +196,11 @@ def train_model(model, X_t, y_t, X_v, y_v, epochs=20, batch_size=32):
     
     return history
 
-# Load models
+# Load the models
 m6 = tf.keras.models.load_model('models/cnn_model6.keras')
-m7 = tf.keras.models.load_model('models/cnn_model7.keras')
-m8 = tf.keras.models.load_model('models/cnn_model8.keras')
+m10 = tf.keras.models.load_model('models/cnn_model10.keras')
+m11 = tf.keras.models.load_model('models/cnn_model11.keras')
 
-# Compare models
-compare_models([m6, m7, m8])
+models = [m6, m10, m11]
+
+compare_models(models)
