@@ -1,0 +1,4 @@
+{
+    "Model 12 (2 layers)": {"Test Loss": 0.01064558420330286, "Test MAE": 0.05741891264915466, "Test Accuracy": 0.13101810216903687},
+    "Model 13 (3 layers)": {"Test Loss": 0.009486439637839794, "Test MAE": 0.0544586181640625, "Test Accuracy": 0.13133254647254944}
+}

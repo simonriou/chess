@@ -7,11 +7,11 @@
     - 64 batch size
     - 0.2 validation split
     - 10 epochs
-- `cnn_model2` was trained using the same parameters, but with a larger dataset
-- `cnn_model3` was trained using the same dataset as `cnn_model2`, except now on 50 epochs
-- `cnn_model4` is using the new normalization process for evaluations
-- `cnn_model5` is using yet another normalization process
-- `cnn_model6` has double input (matrix feature and turn feature), as well as the following parameters:
+- `cnn_model2` Was trained using the same parameters, but with a larger dataset
+- `cnn_model3` Was trained using the same dataset as `cnn_model2`, except now on 50 epochs
+- `cnn_model4` Is using the new normalization process for evaluations
+- `cnn_model5` Is using yet another normalization process
+- `cnn_model6` Has double input (matrix feature and turn feature), as well as the following parameters:
     - 2 Conv. layers (32 & 64, 3x3, same) w/ batch normalization & ReLu activation, for the matrix features only
     - Flattens the result
     - Concatenates it with the turn feature (scalar)
@@ -19,9 +19,10 @@
     - Adam optmizer, mae and accuracy metrics
     - 32 batch size
     - 20 epochs
-- `cnn_model7`'s goal is to check the impact of the batch size on the performances. Batch size switched to 64.
-- `cnn_model8`: same, batch size switched to 128.
-- `cnn_model9`: is using 32 batch size and 100 epochs.
-- `cnn_model10`: has 5x5 kernels and same other params as number 6.
-- `cnn_model11`: has one 5x5 kernel (for large paterns, e.g. pawns) and one 3x3 kernel (for piece/piece interactions).
-- `cnn_model12`: has two 7x7 kernels.
+- `cnn_model7` Goal is to check the impact of the batch size on the performances. Batch size switched to 64.
+- `cnn_model8` Same, batch size switched to 128.
+- `cnn_model9` Is using 32 batch size and 100 epochs.
+- `cnn_model10` Has 5x5 kernels and same other params as number 6.
+- `cnn_model11` Has one 5x5 kernel (for large paterns, e.g. pawns) and one 3x3 kernel (for piece/piece interactions).
+- `cnn_model12` Has two 7x7 kernels.
+- `cnn_model13` Added a thrid convolutional layer (128, 5x5 kernel).
