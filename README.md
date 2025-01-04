@@ -103,11 +103,19 @@ Recently added support for double input in the CNN -> flat model (one for the bo
 
 ## Performances
 
-At the moment, the most efficient model is **Model number 6**, as you can see below:
+At the moment, the most efficient model is **Model number 12**. It has the following features:
+- double input (matrix feature and turn feature)
+- 2 Conv. layers (7x7 kernels, 32 & 64 filters) with batch normalization and relu activation
+- Flattened and merged with the scalar turn input
+- 2 Dense layers (128 & 64) relu activated
+- Adam optimizer (0.001 learning rate)
+- MSE as loss function
+- Accuracy AND MAE as metrics
+- 20 epochs, 32 batch size
 
-![single_vs_double](media/single_vs_double.png)
+Below is a little comparison of models 6, 10, 11 and 12, whose details are specified in the `models.md` file.
 
-![batch_size](media/batch_size.png)
+![kernel_size](/media/kernel_size.png)
 
 ## Functions
 

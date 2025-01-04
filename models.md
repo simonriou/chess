@@ -24,3 +24,4 @@
 - `cnn_model9`: is using 32 batch size and 100 epochs.
 - `cnn_model10`: has 5x5 kernels and same other params as number 6.
 - `cnn_model11`: has one 5x5 kernel (for large paterns, e.g. pawns) and one 3x3 kernel (for piece/piece interactions).
+- `cnn_model12`: has two 7x7 kernels.

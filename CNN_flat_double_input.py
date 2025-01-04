@@ -66,10 +66,10 @@ def build_model(input_shape=(8, 8, 12)):
 
     # Input for the board features
     board_input = Input(shape=input_shape, name='board_input')
-    x = Conv2D(32, kernel_size=(5, 5), padding='same')(board_input)
+    x = Conv2D(32, kernel_size=(7, 7), padding='same')(board_input)
     x = BatchNormalization()(x)
     x = Activation('relu')(x)
-    x = Conv2D(64, kernel_size=(3, 3), padding='same')(x)
+    x = Conv2D(64, kernel_size=(7, 7), padding='same')(x)
     x = BatchNormalization()(x)
     x = Activation('relu')(x)
     x = Flatten()(x)
@@ -200,7 +200,14 @@ def train_model(model, X_t, y_t, X_v, y_v, epochs=20, batch_size=32):
 m6 = tf.keras.models.load_model('models/cnn_model6.keras')
 m10 = tf.keras.models.load_model('models/cnn_model10.keras')
 m11 = tf.keras.models.load_model('models/cnn_model11.keras')
+m12 = tf.keras.models.load_model('models/cnn_model12.keras')
 
-models = [m6, m10, m11]
+models = [m6, m10, m11, m12]
 
 compare_models(models)
+
+# # Build the model
+# model = build_model()
+
+# # Train the model
+# history = train_model(model, [X_train_matrix, X_train_turn], y_train, [X_test_matrix, X_test_turn], y_test, epochs=20, batch_size=32)
