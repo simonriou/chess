@@ -26,3 +26,6 @@
 - `cnn_model11` Has one 5x5 kernel (for large paterns, e.g. pawns) and one 3x3 kernel (for piece/piece interactions).
 - `cnn_model12` Has two 7x7 kernels.
 - `cnn_model13` Added a thrid convolutional layer (128, 5x5 kernel).
+- `cnn_model14` Has a few optimizer changes and only 2 conv. layers (7x7, 7x7).
+
+TO DO: TRAIN 14TH.

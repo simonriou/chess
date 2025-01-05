@@ -66,12 +66,18 @@ def build_model(input_shape=(8, 8, 12)):
 
     # Input for the board features
     board_input = Input(shape=input_shape, name='board_input')
-    x = Conv2D(32, kernel_size=(7, 7), padding='same')(board_input)
+
+    # Convolutional layer 1
+    x = Conv2D(32, kernel_size=(7, 7), padding='same', kernel_initializer='he_normal')(board_input)
     x = BatchNormalization()(x)
     x = Activation('relu')(x)
+
+    # Convolutional layer 2
     x = Conv2D(64, kernel_size=(7, 7), padding='same')(x)
     x = BatchNormalization()(x)
     x = Activation('relu')(x)
+
+    # Flatten the output
     x = Flatten()(x)
 
     # Input for the turn scalar
@@ -91,9 +97,15 @@ def build_model(input_shape=(8, 8, 12)):
 
     model = Model(inputs=[board_input, turn_input], outputs=output)
 
+    lr_schedule = tf.keras.optimizers.schedules.ExponentialDecay(
+        initial_learning_rate=0.001,
+        decay_steps=10000,
+        decay_rate=0.9
+    )
+
     # Compile the model
     model.compile(
-        optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
+        optimizer=tf.keras.optimizers.Adam(learning_rate=lr_schedule, clipnorm=1.0),
         loss='mse',
         metrics=['accuracy', 'mae']
     )
@@ -155,10 +167,10 @@ def compare_models(models):
     for i, (fen, turn, label, preds) in enumerate(zip(fens, turns, labels, predictions)):
         print(f"Stockfish Evaluation: {label} (Real: {denormalize(label)/100:.2f}) | FEN: {matrix_to_fen(fen)} | Turn: {turn}")
         for j, pred in enumerate(preds):
-            print(f"Model {j + 6} Prediction: {pred:.2f} | Real eval: {denormalize(pred)/100:.2f}")
+            print(f"Model {j + 13} Prediction: {pred:.2f} | Real eval: {denormalize(pred)/100:.2f}")
 
     # Export the results to a JSON file
-    with open('performances/kernels.json', 'w') as f:
+    with open('performances/third_layer.json', 'w') as f:
         json.dump(performances, f)
         f.write('\n')
 
@@ -197,12 +209,10 @@ def train_model(model, X_t, y_t, X_v, y_v, epochs=20, batch_size=32):
     return history
 
 # Load the models
-m6 = tf.keras.models.load_model('models/cnn_model6.keras')
-m10 = tf.keras.models.load_model('models/cnn_model10.keras')
-m11 = tf.keras.models.load_model('models/cnn_model11.keras')
-m12 = tf.keras.models.load_model('models/cnn_model12.keras')
+m13 = tf.keras.models.load_model('models/cnn_model13.keras')
+m14 = tf.keras.models.load_model('models/cnn_model14.keras')
 
-models = [m6, m10, m11, m12]
+models = [m13, m14]
 
 compare_models(models)
 
