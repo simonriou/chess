@@ -153,7 +153,7 @@ def compare_models(models):
     fens = X_test_matrix[indices]
     turns = X_test_turn[indices]
     labels = y_test[indices]
-
+    
     predictions = []
 
     # For each random fen and turn
