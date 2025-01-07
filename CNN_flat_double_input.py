@@ -153,7 +153,7 @@ def compare_models(models):
     fens = X_test_matrix[indices]
     turns = X_test_turn[indices]
     labels = y_test[indices]
-    
+
     predictions = []
 
     # For each random fen and turn
@@ -170,7 +170,7 @@ def compare_models(models):
             print(f"Model {j + 13} Prediction: {pred:.2f} | Real eval: {denormalize(pred)/100:.2f}")
 
     # Export the results to a JSON file
-    with open('performances/third_layer.json', 'w') as f:
+    with open('performances/optimizer.json', 'w') as f:
         json.dump(performances, f)
         f.write('\n')
 
