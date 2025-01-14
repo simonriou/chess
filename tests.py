@@ -20,14 +20,14 @@ def eval_fen(feature, turn, model):
     return prediction[0][0]
 
 # FEN to evaluate
-fen = '1K1q4/4q3/8/8/8/8/8/8 b - - 0 1'
+fen = 'N1bk3r/pp1p1ppp/3Q1n2/8/8/4P1P1/PPP4P/RN2KB1q w Q - 2 12'
 fens = np.array([fen_to_features(fen)[0]])
 turns = np.array([fen_to_features(fen)[1]])
 features = np.array(fens)
 turns = np.array(turns)
 
 # Load the model
-model = tf.keras.models.load_model('models/cnn_model14.keras')
+model = tf.keras.models.load_model('models/cnn_model13.keras')
 
 # Evaluate the positions
 for fen, turn in zip(fens, turns):

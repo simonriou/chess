@@ -68,7 +68,7 @@ def build_model(input_shape=(8, 8, 12)):
     board_input = Input(shape=input_shape, name='board_input')
 
     # Convolutional layer 1
-    x = Conv2D(32, kernel_size=(7, 7), padding='same')(board_input)
+    x = Conv2D(32, kernel_size=(8, 8), padding='same')(board_input)
     x = BatchNormalization()(x)
     x = Activation('relu')(x)
 
@@ -169,7 +169,7 @@ def compare_models(models):
             print(f"Model {j + 12} Prediction: {pred:.2f} | Real eval: {denormalize(pred)/100:.2f}")
 
     # Export the results to a JSON file
-    with open('performances/third_layer.json', 'w') as f:
+    with open('performances/third_kernel.json', 'w') as f:
         json.dump(performances, f)
         f.write('\n')
 
@@ -208,10 +208,10 @@ def train_model(model, X_t, y_t, X_v, y_v, epochs=20, batch_size=32):
     return history
 
 # Load the models
-m12 = tf.keras.models.load_model('models/cnn_model12.keras')
 m13 = tf.keras.models.load_model('models/cnn_model13.keras')
+m15 = tf.keras.models.load_model('models/cnn_model15.keras')
 
-models = [m12, m13]
+models = [m13, m15]
 
 compare_models(models)
 
