@@ -279,3 +279,55 @@ def split_pgn(input_pgn_file, num_files):
     
     # Return the list of output file paths
     return output_files
+
+def merge_features_labels(folders):
+    """Merges the features from multiple folders into a single list.
+    Args:
+    - folders: list of str, paths to the folders containing the features
+    Earch folder is of format:
+    - folder1/
+        - 1/
+            - features.json
+            - labels.json
+        - 2/
+            - features.json
+            - labels.json
+        ...
+    - folder2/
+        - 1/
+            - features.json
+            - labels.json
+        - 2/
+            - features.json
+            - labels.json
+        ...
+    Returns:
+    - output_path: str, path to the merged features file (processed/merged)
+    """
+    # List to hold the features and labels
+    features = []
+    labels = []
+    
+    # Load the features and labels from each folder
+    for folder in folders:
+        # Get the list of subfolders
+        subfolders = [f.path for f in os.scandir(folder) if f.is_dir()]
+        
+        # Load the features and labels from each subfolder
+        for subfolder in subfolders:
+            # Load the features and labels from the subfolder
+            with open(os.path.join(subfolder, 'features.json'), 'r') as f:
+                sub_features = json.load(f)
+            with open(os.path.join(subfolder, 'labels.json'), 'r') as f:
+                sub_labels = json.load(f)
+            
+            # Append the features and labels to the main lists
+            features.append(sub_features)
+            labels.append(sub_labels)
+    
+    # Export the merged features and labels
+    output_path = 'processed/merged'
+    os.makedirs(output_path, exist_ok=True)
+    export_features_labels('merged', 1, features, labels, unroll=True)
+    
+    return output_path

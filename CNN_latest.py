@@ -14,7 +14,7 @@ from tensorflow.keras.layers import Conv2D, BatchNormalization, Flatten, Dense, 
 from sklearn.model_selection import train_test_split
 
 # Import the data from processed/classical_2000_0124
-set_path = 'processed/blitz_2000_23'
+set_path = 'processed/merged'
 set_name = set_path.split('/')[-1]
 
 features = []
@@ -148,7 +148,9 @@ def compare_models(models):
     plt.show()
 
     # Pick a few random fens that have > 0.5 or < -0.5 eval and calculate the evaluation for each model, then compare to the stockfish evaluation
-    indices = np.where((y_test > 0.5) | (y_test < -0.5))[0][:5]
+    # indices = np.where((y_test > 0.5) | (y_test < -0.5))[0][:5]
+    # Pick 5 random indices
+    indices = np.random.choice(len(y_test), 5)
     fens = X_test_matrix[indices]
     turns = X_test_turn[indices]
     labels = y_test[indices]
