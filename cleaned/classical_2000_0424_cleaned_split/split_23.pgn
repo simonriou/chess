@@ -1,0 +1,294 @@
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700561558"]
+[White "YurijNone"]
+[Black "terza"]
+[WhiteElo "2191"]
+[BlackElo "1888"]
+[WhiteRD "46.0"]
+[BlackRD "30.2"]
+[TimeControl "900+0"]
+[Date "2024.04.24"]
+[Time "07:37:00"]
+[WhiteClock "0:15:00.000"]
+[BlackClock "0:15:00.000"]
+[ECO "B22"]
+[PlyCount "49"]
+[Result "1-0"]
+
+1. e4 c5 2. c3 e6 3. d4 cxd4 4. cxd4 d5 5. e5 Bb4+ 6. Nc3 Nc6 7. Be3 a6 8. Bd3 b5 9. Ne2 Ba5 10. O-O Bb6 11. Rc1 Bd7 12. f4 Nge7 13. Bb1 Na5 14. Ng3 Nc4 15. Qe2 Nxe3 16. Qxe3 Nc6 17. Nce2 g6 18. Kh1 Qe7 19. a3 Na5 20. Ba2 Nc4 21. Bxc4 dxc4 22. Ne4 Bc6 23. Nf6+ Kf8 24. f5 Rd8 25. Qh6# {Black checkmated} 1-0
+
+
+
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700561544"]
+[White "blore"]
+[Black "karadepau"]
+[WhiteElo "1969"]
+[BlackElo "2188"]
+[WhiteRD "22.8"]
+[BlackRD "84.4"]
+[TimeControl "900+0"]
+[Date "2024.04.24"]
+[Time "07:10:00"]
+[WhiteClock "0:15:00.000"]
+[BlackClock "0:15:00.000"]
+[ECO "C80"]
+[PlyCount "132"]
+[Result "0-1"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. d4 b5 7. Bb3 d5 8. dxe5 Be6 9. Nbd2 Bc5 10. Nxe4 dxe4 11. Bxe6 fxe6 12. Ng5 Qxd1 13. Rxd1 O-O 14. Nxe4 Bd4 15. c3 Bxe5 16. Be3 Rfd8 17. Nc5 Kf7 18. g3 Ne7 19. Rxd8 Rxd8 20. Nxa6 h6 21. Bc5 Rd2 22. a4 bxa4 23. Rxa4 Rxb2 24. Bd4 Bd6 25. Rc4 Nd5 26. Bc5 Rc2 27. Bxd6 cxd6 28. Rc6 Rxc3 29. Rxc3 Nxc3 30. Nb4 e5 31. Kf1 Ke6 32. Ke1 g5 33. f3 d5 34. Kd2 Nb5 35. Nd3 Nd4 36. Ne1 h5 37. Ke3 Nf5+ 38. Kd3 g4 39. fxg4 e4+ 40. Kd2 hxg4 41. Ng2 Ke5 42. Nf4 Nd4 43. h3 gxh3 44. Nxh3 Nf3+ 45. Ke2 d4 46. Nf4 Ng5 47. Ng6+ Kf6 48. Nf4 Ne6 49. Nd5+ Ke5 50. Nb4 Ng7 51. Nc6+ Kd5 52. Nb4+ Kc4 53. Nc6 Nf5 54. g4 d3+ 55. Kd1 Ne3+ 56. Kd2 Nxg4 57. Na5+ Kd4 58. Nb3+ Kd5 59. Nc1 Kc4 60. Na2 e3+ 61. Ke1 Kb3 62. Nc1+ Kc2 63. Nxd3 Kxd3 64. Kd1 e2+ 65. Ke1 Nf6 66. Kf2 Kd2 {White resigns} 0-1
+
+
+
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700561442"]
+[White "YurijNone"]
+[Black "blore"]
+[WhiteElo "2187"]
+[BlackElo "1973"]
+[WhiteRD "46.2"]
+[BlackRD "22.8"]
+[TimeControl "900+0"]
+[Date "2024.04.24"]
+[Time "06:56:00"]
+[WhiteClock "0:15:00.000"]
+[BlackClock "0:15:00.000"]
+[ECO "C55"]
+[PlyCount "47"]
+[Result "1-0"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. Nc3 O-O 6. O-O d6 7. h3 h6 8. Ne2 a6 9. Kh1 b5 10. Bb3 Na5 11. g4 Nxb3 12. axb3 Bb7 13. g5 Nxe4 14. dxe4 Bxe4 15. Ng3 Bb7 16. gxh6 Bg5 17. hxg7 Kxg7 18. Kh2 Bf4 19. Rg1 Kh8 20. Bxf4 exf4 21. Qd4+ f6 22. Qxf4 Qe7 23. Nf5 Qe4 24. Qh6# {Black checkmated} 1-0
+
+
+
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700561416"]
+[White "blore"]
+[Black "kunde"]
+[WhiteElo "1979"]
+[BlackElo "2062"]
+[WhiteRD "22.8"]
+[BlackRD "32.0"]
+[TimeControl "900+0"]
+[Date "2024.04.24"]
+[Time "06:39:00"]
+[WhiteClock "0:15:00.000"]
+[BlackClock "0:15:00.000"]
+[ECO "C62"]
+[PlyCount "140"]
+[Result "0-1"]
+
+1. e4 e5 2. Nf3 d6 3. d4 exd4 4. Nxd4 Nc6 5. Bb5 Bd7 6. Nb3 Nf6 7. Nc3 Be7 8. Bf4 Ne5 9. Bxe5 dxe5 10. Bxd7+ Qxd7 11. Qxd7+ Nxd7 12. Nd5 Bd6 13. O-O-O O-O-O 14. Na5 Nc5 15. f3 c6 16. Ne3 Bc7 17. Nb3 Nxb3+ 18. axb3 g6 19. Nc4 b5 20. Ne3 Bb6 21. Ng4 Bc7 22. Nf6 h5 23. c4 Rxd1+ 24. Rxd1 Rd8 25. Rxd8+ Bxd8 26. Ng8 b4 27. g3 Kd7 28. Nh6 Ke6 29. Kc2 Bg5 30. Ng8 f6 31. h4 Be3 32. Kd3 Bf2 33. g4 Bxh4 34. gxh5 gxh5 35. Nh6 Bg5 36. Nf5 h4 37. Ke2 h3 38. Kf2 Bc1 39. Kg3 Bxb2 40. Kxh3 Bc1 41. Kg2 Kd7 42. Kf2 Kc7 43. Ke2 Kb6 44. Kd3 Kc5 45. Kc2 Bg5 46. Kd3 a5 47. Ng7 Kb6 48. Ne6 Bh6 49. Kc2 c5 50. Kd3 Kc6 51. Nd8+ Kc7 52. Ne6+ Kd6 53. Nd8 Bf8 54. Nb7+ Kc7 55. Nxa5 Kb6 56. Ke2 Kxa5 57. Kf2 Kb6 58. Kg3 Kc6 59. Kg4 Kd6 60. Kf5 Ke7 61. Kg6 Ke6 62. Kh7 Kf7 63. Kh8 Bh6 64. Kh7 Bg5 65. Kh8 Kg6 66. Kg8 Be3 67. Kf8 f5 68. Ke7 f4 69. Ke6 Bd4 70. Ke7 Kh5 {White resigns} 0-1
+
+
+
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700561281"]
+[White "HappyPawns"]
+[Black "kamenozrout"]
+[WhiteElo "2790"]
+[BlackElo "2208"]
+[WhiteRD "74.7"]
+[BlackRD "61.8"]
+[WhiteIsComp "Yes"]
+[BlackIsComp "Yes"]
+[TimeControl "900+1"]
+[Date "2024.04.24"]
+[Time "05:55:00"]
+[WhiteClock "0:15:00.000"]
+[BlackClock "0:15:00.000"]
+[ECO "E11"]
+[PlyCount "85"]
+[Result "1-0"]
+
+1. d4 e6 2. c4 Nf6 3. Nf3 Bb4+ 4. Bd2 Qe7 5. g3 Nc6 6. Nc3 Bxc3 7. Bxc3 Ne4 8. Rc1 O-O 9. Bg2 d6 10. O-O Nxc3 11. Rxc3 e5 12. d5 Nb8 13. Ra3 Na6 14. Qd2 Bg4 15. e4 Nc5 16. Ne1 f5 17. h3 Bh5 18. exf5 e4 19. b4 Nd7 20. Re3 Nf6 21. g4 Bf7 22. g5 Nh5 23. h4 Qd7 24. Bxe4 b5 25. Ng2 bxc4 26. Qe2 Qb5 27. g6 Nf6 28. gxf7+ Rxf7 29. Rc1 Qxb4 30. Rxc4 Qa5 31. Bf3 Qa6 32. Nf4 Qa5 33. Re7 Rxe7 34. Qxe7 Re8 35. Qxc7 Re1+ 36. Kg2 Qxa2 37. Ne6 Ne8 38. Qxg7+ Nxg7 39. Rc8+ Ne8 40. Rxe8+ Kf7 41. Rf8+ Ke7 42. f6+ Kd7 43. Rd8# {Black checkmated} 1-0
+
+
+
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700560782"]
+[White "HappyPawns"]
+[Black "kamenozrout"]
+[WhiteElo "2789"]
+[BlackElo "2209"]
+[WhiteRD "74.9"]
+[BlackRD "61.9"]
+[WhiteIsComp "Yes"]
+[BlackIsComp "Yes"]
+[TimeControl "900+1"]
+[Date "2024.04.24"]
+[Time "02:24:00"]
+[WhiteClock "0:15:00.000"]
+[BlackClock "0:15:00.000"]
+[ECO "E92"]
+[PlyCount "63"]
+[Result "1-0"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. Nf3 e5 7. Be3 exd4 8. Nxd4 Re8 9. Bf3 Nfd7 10. O-O Ne5 11. Be2 Qh4 12. Ndb5 Ng4 13. Bxg4 Bxg4 14. f3 Bxc3 15. bxc3 Qe7 16. fxg4 a6 17. Nd4 Qxe4 18. Bf2 Nd7 19. Rb1 Nc5 20. Re1 Qf4 21. Qf3 Qg5 22. Nb3 Na4 23. Bd4 c6 24. Rf1 Re7 25. h4 Qh6 26. Qf6 Re5 27. Qxf7+ Kh8 28. Qf6+ Qg7 29. Qxd6 Rae8 30. Na5 b5 31. Nxc6 h5 32. Nxe5 {Black resigns} 1-0
+
+
+
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700560167"]
+[White "AsDaGo"]
+[Black "kurumim"]
+[WhiteElo "2060"]
+[BlackElo "2221"]
+[WhiteRD "92.6"]
+[BlackRD "117.6"]
+[TimeControl "2700+45"]
+[Date "2024.04.23"]
+[Time "19:46:00"]
+[WhiteClock "0:45:00.000"]
+[BlackClock "0:45:00.000"]
+[ECO "A43"]
+[PlyCount "81"]
+[Result "1/2-1/2"]
+
+1. d4 c5 2. d5 f5 3. e4 fxe4 4. Nc3 Nf6 5. g4 e6 6. d6 Qb6 7. Nb5 Nd5 8. c4 a6 9. Qa4 Bxd6 10. Nxd6+ Qxd6 11. cxd5 exd5 12. Be3 O-O 13. O-O-O d4 14. Nh3 Qe5 15. Bd2 d5 16. Rg1 Nc6 17. Rg3 Be6 18. Kb1 c4 19. Re1 Qd6 20. Bc1 b5 21. Qc2 d3 22. Qd2 Nd4 23. Ng1 b4 24. f3 Nc2 25. fxe4 Nxe1 26. Qxe1 dxe4 27. Bg2 Bd5 28. Bd2 c3 29. bxc3 bxc3 30. Bxc3 Qa3 31. Qd2 Rab8+ 32. Ka1 Bxa2 33. Qxa2+ Qxa2+ 34. Kxa2 Rf2+ 35. Ka3 d2 36. Bxd2 Rxd2 37. Bxe4 Rd1 38. Ka2 Rd2+ 39. Ka3 Rd1 40. Ka2 Rd2+ 41. Ka3 {Game drawn by repetition} 1/2-1/2
+
+
+
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700559938"]
+[White "Boobyslegacy"]
+[Black "pingupenguin"]
+[WhiteElo "2146"]
+[BlackElo "1971"]
+[WhiteRD "36.5"]
+[BlackRD "51.9"]
+[TimeControl "900+0"]
+[Date "2024.04.23"]
+[Time "19:42:00"]
+[WhiteClock "0:15:00.000"]
+[BlackClock "0:15:00.000"]
+[ECO "A00"]
+[PlyCount "57"]
+[Result "1-0"]
+
+1. g4 e6 2. Bg2 d5 3. d4 c5 4. Nc3 Nc6 5. Nf3 a6 6. O-O Qc7 7. e4 dxe4 8. Nxe4 cxd4 9. Nxd4 Nf6 10. Nxf6+ gxf6 11. Nxc6 bxc6 12. Re1 Bd7 13. Qd3 h5 14. g5 fxg5 15. Bxg5 h4 16. h3 Be7 17. Bxe7 Kxe7 18. Rad1 Rhg8 19. Kh1 Rg6 20. Be4 Rg5 21. Qa3+ Ke8 22. Rg1 Rxg1+ 23. Rxg1 f5 24. Rg8+ Kf7 25. Rxa8 fxe4 26. Qf8+ Kg6 27. Qe7 Qb7 28. Rg8+ Kf5 29. Qg5# {Black checkmated} 1-0
+
+
+
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700559871"]
+[White "GeidiPrime"]
+[Black "lczero"]
+[WhiteElo "2317"]
+[BlackElo "2835"]
+[WhiteRD "57.4"]
+[BlackRD "87.3"]
+[WhiteIsComp "Yes"]
+[BlackIsComp "Yes"]
+[TimeControl "900+5"]
+[Date "2024.04.23"]
+[Time "18:49:00"]
+[WhiteClock "0:15:00.000"]
+[BlackClock "0:15:00.000"]
+[ECO "D01"]
+[PlyCount "110"]
+[Result "0-1"]
+
+1. d4 d5 2. Nc3 Nf6 3. Bg5 h6 4. Bh4 c5 5. e3 cxd4 6. Qxd4 e6 7. Bxf6 gxf6 8. Nf3 Nc6 9. Qf4 a6 10. O-O-O h5 11. Qg3 Bd7 12. e4 h4 13. Nxh4 d4 14. Ne2 Qa5 15. Kb1 Nb4 16. a3 Nxc2 17. Kxc2 Ba4+ 18. b3 Rxh4 19. Rxd4 Rc8+ 20. Kd1 Bb5 21. a4 e5 22. Qxh4 exd4 23. Nf4 Qc3 24. Bxb5+ axb5 25. Ke2 d3+ 26. Kf3 d2+ 27. Kg4 f5+ 28. exf5 bxa4 29. Rd1 Qc2 30. Rxd2 Qxd2 31. bxa4 Bd6 32. g3 Bxf4 33. gxf4 Qd1+ 34. Kg5 Kd7 35. Qh5 Qd5 36. Kh4 f6 37. Qh7+ Kd6 38. Qg7 Qxf5 39. Kg3 b5 40. Qf7 bxa4 41. h3 Qe6 42. Qa7 Qc4 43. Qb6+ Ke7 44. Qa7+ Kf8 45. Qd7 Rc7 46. Qd6+ Kg7 47. Kh2 Qc5 48. Qd2 a3 49. Qe2 Kh6 50. h4 Rg7 51. f5 a2 52. Qd2+ Kh7 53. Qf4 a1=Q 54. Qg3 Qce5 55. h5 Rxg3 {White resigns} 0-1
+
+
+
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700559801"]
+[White "pingupenguin"]
+[Black "Aromas"]
+[WhiteElo "1969"]
+[BlackElo "2061"]
+[WhiteRD "52.4"]
+[BlackRD "26.9"]
+[TimeControl "900+0"]
+[Date "2024.04.23"]
+[Time "18:42:00"]
+[WhiteClock "0:15:00.000"]
+[BlackClock "0:15:00.000"]
+[ECO "B46"]
+[PlyCount "179"]
+[Result "1/2-1/2"]
+
+1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 e6 5. Nc3 a6 6. Be3 Nc6 7. Be2 Nf6 8. g4 Be7 9. g5 Nd7 10. h4 Nxd4 11. Qxd4 f6 12. f4 O-O 13. O-O-O b5 14. f5 Bb7 15. fxe6 Nc5 16. Bg4 b4 17. Qxb4 Qc7 18. Bxc5 dxc5 19. Qc4 Qf4+ 20. Kb1 Qxg4 21. Rd7 Qf3 22. Rf1 Qh3 23. Rxb7 fxg5 24. Rxf8+ Rxf8 25. a3 Qf1+ 26. Qxf1 Rxf1+ 27. Ka2 gxh4 28. Nd5 Bd6 29. Rd7 Bf8 30. e7 Bxe7 31. Nxe7+ Kf8 32. Nf5 h3 33. Rxg7 h2 34. Rxh7 h1=Q 35. Rxh1 Rxh1 36. Kb3 Re1 37. Nd6 Ke7 38. Nb7 Re3+ 39. Kc4 Rxe4+ 40. Kxc5 Re2 41. Kb4 Rxc2 42. b3 Rc7 43. Nc5 a5+ 44. Kb5 Kd6 45. Ne4+ Kd5 46. Nd2 Rc2 47. Nc4 a4 48. Nb6+ Kd6 49. Kxa4 Kc6 50. Nc4 Kb7 51. Kb5 Rc1 52. a4 Rb1 53. b4 Rc1 54. a5 Rh1 55. Ka4 Rh4 56. Na3 Rg4 57. Nc2 Rg2 58. Ne3 Rg3 59. Nf5 Rg5 60. Nd4 Rg4 61. Nf3 Rg3 62. Ne1 Rg1 63. Nd3 Rg4 64. Kb5 Ka7 65. Nc5 Rg5 66. Kc6 Rg6+ 67. Kc7 Rg7+ 68. Nd7 Ka6 69. Kc6 Rg6+ 70. Kc5 Rg5+ 71. Kc4 Rxa5 72. Nc5+ Rxc5+ 73. Kxc5 Kb7 74. Kb5 Kc7 75. Ka6 Kb8 76. Kb6 Ka8 77. Kc7 Ka7 78. b5 Ka8 79. Kc6 Kb8 80. b6 Kc8 81. Kb5 Kb7 82. Kc5 Kb8 83. Kb5 Kb7 84. Ka5 Kb8 85. Ka6 Ka8 86. Kb5 Kb7 87. Ka5 Kb8 88. Ka6 Ka8 89. b7+ Kb8 90. Kb6 {Game drawn by stalemate} 1/2-1/2
+
+
+
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700559732"]
+[White "lczero"]
+[Black "GeidiPrime"]
+[WhiteElo "2833"]
+[BlackElo "2318"]
+[WhiteRD "87.8"]
+[BlackRD "57.6"]
+[WhiteIsComp "Yes"]
+[BlackIsComp "Yes"]
+[TimeControl "900+5"]
+[Date "2024.04.23"]
+[Time "18:20:00"]
+[WhiteClock "0:15:00.000"]
+[BlackClock "0:15:00.000"]
+[ECO "C18"]
+[PlyCount "77"]
+[Result "1-0"]
+
+1. d4 e6 2. e4 d5 3. Nc3 Bb4 4. e5 c5 5. a3 Bxc3+ 6. bxc3 Ne7 7. Qg4 cxd4 8. Qxg7 Rg8 9. Qxh7 Qc7 10. Ne2 dxc3 11. f4 Bd7 12. Rb1 Nbc6 13. Qd3 d4 14. h4 Nf5 15. h5 O-O-O 16. Rg1 Qa5 17. g4 Nh4 18. Rb5 Qa6 19. Kf2 Kb8 20. Rg3 b6 21. Rb1 Qxd3 22. cxd3 Rg7 23. a4 Rdg8 24. Bh3 Kb7 25. a5 Nxa5 26. Nxd4 Rd8 27. Be3 Bc6 28. g5 Rh7 29. Bg4 Nf5 30. Bxf5 exf5 31. h6 Bd7 32. Rc1 Rc8 33. Rh3 Rc5 34. e6 Be8 35. e7 Kc8 36. Ne2 Rc7 37. Rxc3 Nc6 38. Bd4 Rxe7 39. Bf6 {Black resigns} 1-0
+
+
+
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700559717"]
+[White "Aromas"]
+[Black "karadepau"]
+[WhiteElo "2067"]
+[BlackElo "2173"]
+[WhiteRD "27.0"]
+[BlackRD "86.1"]
+[TimeControl "900+0"]
+[Date "2024.04.23"]
+[Time "18:17:00"]
+[WhiteClock "0:15:00.000"]
+[BlackClock "0:15:00.000"]
+[ECO "C54"]
+[PlyCount "112"]
+[Result "0-1"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. c3 d6 6. Bg5 h6 7. Bxf6 Qxf6 8. h3 O-O 9. Nbd2 a5 10. Qe2 Ne7 11. O-O-O Ng6 12. g3 c6 13. Rdf1 b5 14. Bb3 b4 15. c4 a4 16. Bc2 Qd8 17. Bb1 Ne7 18. g4 Ng6 19. Rfg1 Nf4 20. Qf1 Qb6 21. Rh2 a3 22. b3 Bd4 23. h4 d5 24. h5 f6 25. Nh4 Ra5 26. Nf5 Be6 27. Ne7+ Kh7 28. Ng6 Nxg6 29. hxg6+ Kxg6 30. Nf3 Kf7 31. Nh4 Qc5 32. Nf5 dxe4 33. dxe4 Rd8 34. Bc2 Bb2+ 35. Kb1 Raa8 36. Qe2 Bc3 37. Rd1 Qb6 38. Nd6+ Kg8 39. Rh3 Rd7 40. Rhd3 Rad8 41. Nf5 Rxd3 42. Bxd3 Bd4 43. Bc2 Rd7 44. Nxd4 Rxd4 45. f3 Qd8 46. Kc1 Rxd1+ 47. Qxd1 Qxd1+ 48. Kxd1 g6 49. Ke2 h5 50. gxh5 gxh5 51. Kf2 h4 52. Kg2 Kg7 53. Bd3 Kh6 54. c5 Kg5 55. Ba6 Bxb3 56. axb3 a2 {White resigns} 0-1
+
+
+
+[Event "FICS rated standard game"]
+[Site "FICS freechess.org"]
+[FICSGamesDBGameNo "700559652"]
+[White "GeidiPrime"]
+[Black "exeComp"]
+[WhiteElo "2319"]
+[BlackElo "2794"]
+[WhiteRD "57.7"]
+[BlackRD "40.5"]
+[WhiteIsComp "Yes"]
+[BlackIsComp "Yes"]
+[TimeControl "900+5"]
+[Date "2024.04.23"]
+[Time "17:51:00"]
+[WhiteClock "0:15:00.000"]
+[BlackClock "0:15:00.000"]
+[ECO "D01"]
+[PlyCount "72"]
+[Result "0-1"]
+
+1. d4 Nf6 2. Nc3 d5 3. Bg5 Nbd7 4. Qd3 e6 5. e4 h6 6. Bh4 dxe4 7. Nxe4 Be7 8. Nxf6+ Bxf6 9. Bg3 O-O 10. O-O-O c5 11. Nf3 cxd4 12. Nxd4 Nc5 13. Qe3 Qa5 14. Nf3 Qxa2 15. Qxc5 Bxb2+ 16. Kd2 Rd8+ 17. Bd3 b6 18. Qb4 Ba6 19. Ke3 Bxd3 20. cxd3 a5 21. Qxb6 e5 22. Rhe1 f6 23. Qb5 a4 24. Nd2 Bc3 25. Rf1 Kh8 26. Nc4 Rab8 27. Qc6 a3 28. Qa6 Ra8 29. Qc6 Qb3 30. Bh4 e4 31. Bg3 Rac8 32. Bc7 exd3 33. Kf3 d2 34. Ne3 a2 35. g4 Re8 36. Kg2 a1=Q {White resigns} 0-1
+

@@ -20,7 +20,7 @@ def eval_fen(feature, turn, model):
     return prediction[0][0]
 
 # FEN to evaluate
-fen = 'N1bk3r/pp1p1ppp/3Q1n2/8/8/4P1P1/PPP4P/RN2KB1q w Q - 2 12'
+fen = 'R1bk1bnr/4pppp/2p3q1/3Pn3/8/2P1B3/5PPP/4KBNR w K - 1 16'
 fens = np.array([fen_to_features(fen)[0]])
 turns = np.array([fen_to_features(fen)[1]])
 features = np.array(fens)

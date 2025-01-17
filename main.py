@@ -1,7 +1,7 @@
 from utils import clean_pgn, export_features_labels, split_pgn
 from data_process import get_raw_fen, process_game, process_file
 
-file_path = 'datasets/blitz_2000_23.pgn'
+file_path = 'datasets/classical_2000_0424.pgn'
 file_name = file_path.split('/')[-1].split('.')[0]
 stockfish_path = 'stockfish/stockfish-macos-m1-apple-silicon'
 

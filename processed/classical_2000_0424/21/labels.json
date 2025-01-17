@@ -1,0 +1,3376 @@
+[
+    [
+        {
+            "type": "centipawn",
+            "value": 35
+        },
+        {
+            "type": "centipawn",
+            "value": 32
+        },
+        {
+            "type": "centipawn",
+            "value": 39
+        },
+        {
+            "type": "centipawn",
+            "value": 52
+        },
+        {
+            "type": "centipawn",
+            "value": 22
+        },
+        {
+            "type": "centipawn",
+            "value": 18
+        },
+        {
+            "type": "centipawn",
+            "value": -22
+        },
+        {
+            "type": "centipawn",
+            "value": -13
+        },
+        {
+            "type": "centipawn",
+            "value": -28
+        },
+        {
+            "type": "centipawn",
+            "value": -23
+        },
+        {
+            "type": "centipawn",
+            "value": -33
+        },
+        {
+            "type": "centipawn",
+            "value": -26
+        },
+        {
+            "type": "centipawn",
+            "value": -49
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": -19
+        },
+        {
+            "type": "centipawn",
+            "value": -25
+        },
+        {
+            "type": "centipawn",
+            "value": -28
+        },
+        {
+            "type": "centipawn",
+            "value": 10
+        },
+        {
+            "type": "centipawn",
+            "value": 6
+        },
+        {
+            "type": "centipawn",
+            "value": 10
+        },
+        {
+            "type": "centipawn",
+            "value": 15
+        },
+        {
+            "type": "centipawn",
+            "value": 53
+        },
+        {
+            "type": "centipawn",
+            "value": 42
+        },
+        {
+            "type": "centipawn",
+            "value": 28
+        },
+        {
+            "type": "centipawn",
+            "value": 24
+        },
+        {
+            "type": "centipawn",
+            "value": 93
+        },
+        {
+            "type": "centipawn",
+            "value": -8
+        },
+        {
+            "type": "centipawn",
+            "value": 28
+        },
+        {
+            "type": "centipawn",
+            "value": -29
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": -51
+        },
+        {
+            "type": "centipawn",
+            "value": -29
+        },
+        {
+            "type": "centipawn",
+            "value": -32
+        },
+        {
+            "type": "centipawn",
+            "value": -2
+        },
+        {
+            "type": "centipawn",
+            "value": -3
+        },
+        {
+            "type": "centipawn",
+            "value": 5
+        },
+        {
+            "type": "centipawn",
+            "value": -1
+        },
+        {
+            "type": "centipawn",
+            "value": -5
+        },
+        {
+            "type": "centipawn",
+            "value": -41
+        },
+        {
+            "type": "centipawn",
+            "value": -45
+        },
+        {
+            "type": "centipawn",
+            "value": -42
+        },
+        {
+            "type": "centipawn",
+            "value": 16
+        },
+        {
+            "type": "centipawn",
+            "value": 11
+        },
+        {
+            "type": "centipawn",
+            "value": 16
+        },
+        {
+            "type": "centipawn",
+            "value": 25
+        },
+        {
+            "type": "centipawn",
+            "value": 28
+        },
+        {
+            "type": "centipawn",
+            "value": 21
+        },
+        {
+            "type": "centipawn",
+            "value": 23
+        },
+        {
+            "type": "centipawn",
+            "value": -26
+        },
+        {
+            "type": "centipawn",
+            "value": -29
+        },
+        {
+            "type": "centipawn",
+            "value": -408
+        },
+        {
+            "type": "centipawn",
+            "value": -401
+        },
+        {
+            "type": "centipawn",
+            "value": -404
+        },
+        {
+            "type": "centipawn",
+            "value": -407
+        },
+        {
+            "type": "centipawn",
+            "value": -455
+        },
+        {
+            "type": "centipawn",
+            "value": -312
+        },
+        {
+            "type": "centipawn",
+            "value": -430
+        },
+        {
+            "type": "centipawn",
+            "value": -442
+        },
+        {
+            "type": "centipawn",
+            "value": -472
+        },
+        {
+            "type": "centipawn",
+            "value": -473
+        },
+        {
+            "type": "centipawn",
+            "value": -488
+        },
+        {
+            "type": "centipawn",
+            "value": -481
+        },
+        {
+            "type": "centipawn",
+            "value": -492
+        },
+        {
+            "type": "centipawn",
+            "value": -476
+        },
+        {
+            "type": "centipawn",
+            "value": -533
+        },
+        {
+            "type": "centipawn",
+            "value": -517
+        },
+        {
+            "type": "centipawn",
+            "value": -501
+        },
+        {
+            "type": "centipawn",
+            "value": -504
+        },
+        {
+            "type": "centipawn",
+            "value": -522
+        },
+        {
+            "type": "centipawn",
+            "value": -488
+        },
+        {
+            "type": "centipawn",
+            "value": -506
+        },
+        {
+            "type": "centipawn",
+            "value": -444
+        },
+        {
+            "type": "centipawn",
+            "value": -539
+        },
+        {
+            "type": "centipawn",
+            "value": -529
+        },
+        {
+            "type": "centipawn",
+            "value": -542
+        },
+        {
+            "type": "centipawn",
+            "value": -540
+        },
+        {
+            "type": "centipawn",
+            "value": -763
+        },
+        {
+            "type": "centipawn",
+            "value": -747
+        },
+        {
+            "type": "centipawn",
+            "value": -759
+        },
+        {
+            "type": "centipawn",
+            "value": -773
+        },
+        {
+            "type": "centipawn",
+            "value": -922
+        },
+        {
+            "type": "centipawn",
+            "value": -1006
+        },
+        {
+            "type": "mate",
+            "value": "M-9"
+        },
+        {
+            "type": "mate",
+            "value": "M-8"
+        },
+        {
+            "type": "mate",
+            "value": "M-6"
+        },
+        {
+            "type": "mate",
+            "value": "M-5"
+        }
+    ],
+    [
+        {
+            "type": "centipawn",
+            "value": 35
+        },
+        {
+            "type": "centipawn",
+            "value": 29
+        },
+        {
+            "type": "centipawn",
+            "value": -9
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 2
+        },
+        {
+            "type": "centipawn",
+            "value": 19
+        },
+        {
+            "type": "centipawn",
+            "value": 17
+        },
+        {
+            "type": "centipawn",
+            "value": 15
+        },
+        {
+            "type": "centipawn",
+            "value": 20
+        },
+        {
+            "type": "centipawn",
+            "value": 18
+        },
+        {
+            "type": "centipawn",
+            "value": 10
+        },
+        {
+            "type": "centipawn",
+            "value": 27
+        },
+        {
+            "type": "centipawn",
+            "value": -112
+        },
+        {
+            "type": "centipawn",
+            "value": -97
+        },
+        {
+            "type": "centipawn",
+            "value": -237
+        },
+        {
+            "type": "centipawn",
+            "value": -264
+        },
+        {
+            "type": "centipawn",
+            "value": -270
+        },
+        {
+            "type": "centipawn",
+            "value": -238
+        },
+        {
+            "type": "centipawn",
+            "value": -301
+        },
+        {
+            "type": "centipawn",
+            "value": -256
+        },
+        {
+            "type": "centipawn",
+            "value": -246
+        },
+        {
+            "type": "centipawn",
+            "value": -255
+        },
+        {
+            "type": "centipawn",
+            "value": -651
+        },
+        {
+            "type": "centipawn",
+            "value": -643
+        },
+        {
+            "type": "centipawn",
+            "value": -752
+        },
+        {
+            "type": "centipawn",
+            "value": -631
+        },
+        {
+            "type": "centipawn",
+            "value": -647
+        },
+        {
+            "type": "centipawn",
+            "value": -668
+        },
+        {
+            "type": "mate",
+            "value": "M-4"
+        },
+        {
+            "type": "mate",
+            "value": "M-3"
+        },
+        {
+            "type": "mate",
+            "value": "M-3"
+        },
+        {
+            "type": "mate",
+            "value": "M-2"
+        },
+        {
+            "type": "mate",
+            "value": "M-1"
+        },
+        {
+            "type": "mate",
+            "value": "M0"
+        }
+    ],
+    [
+        {
+            "type": "centipawn",
+            "value": 24
+        },
+        {
+            "type": "centipawn",
+            "value": 19
+        },
+        {
+            "type": "centipawn",
+            "value": 4
+        },
+        {
+            "type": "centipawn",
+            "value": 44
+        },
+        {
+            "type": "centipawn",
+            "value": -9
+        },
+        {
+            "type": "centipawn",
+            "value": 2
+        },
+        {
+            "type": "centipawn",
+            "value": -5
+        },
+        {
+            "type": "centipawn",
+            "value": 8
+        },
+        {
+            "type": "centipawn",
+            "value": -1
+        },
+        {
+            "type": "centipawn",
+            "value": 62
+        },
+        {
+            "type": "centipawn",
+            "value": 19
+        },
+        {
+            "type": "centipawn",
+            "value": 62
+        },
+        {
+            "type": "centipawn",
+            "value": 63
+        },
+        {
+            "type": "centipawn",
+            "value": 65
+        },
+        {
+            "type": "centipawn",
+            "value": 69
+        },
+        {
+            "type": "centipawn",
+            "value": 64
+        },
+        {
+            "type": "centipawn",
+            "value": 55
+        },
+        {
+            "type": "centipawn",
+            "value": 76
+        },
+        {
+            "type": "centipawn",
+            "value": 68
+        },
+        {
+            "type": "centipawn",
+            "value": 130
+        },
+        {
+            "type": "centipawn",
+            "value": 105
+        },
+        {
+            "type": "centipawn",
+            "value": 134
+        },
+        {
+            "type": "centipawn",
+            "value": 76
+        },
+        {
+            "type": "centipawn",
+            "value": 83
+        },
+        {
+            "type": "centipawn",
+            "value": 74
+        },
+        {
+            "type": "centipawn",
+            "value": 65
+        },
+        {
+            "type": "centipawn",
+            "value": 16
+        },
+        {
+            "type": "centipawn",
+            "value": 18
+        },
+        {
+            "type": "centipawn",
+            "value": -2
+        },
+        {
+            "type": "centipawn",
+            "value": -1
+        },
+        {
+            "type": "centipawn",
+            "value": -8
+        },
+        {
+            "type": "centipawn",
+            "value": -5
+        },
+        {
+            "type": "centipawn",
+            "value": -2
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 6
+        },
+        {
+            "type": "centipawn",
+            "value": -11
+        },
+        {
+            "type": "centipawn",
+            "value": 32
+        },
+        {
+            "type": "centipawn",
+            "value": 31
+        },
+        {
+            "type": "centipawn",
+            "value": 28
+        },
+        {
+            "type": "centipawn",
+            "value": 20
+        },
+        {
+            "type": "centipawn",
+            "value": 37
+        },
+        {
+            "type": "centipawn",
+            "value": 20
+        },
+        {
+            "type": "centipawn",
+            "value": 101
+        },
+        {
+            "type": "centipawn",
+            "value": 45
+        },
+        {
+            "type": "centipawn",
+            "value": 69
+        },
+        {
+            "type": "centipawn",
+            "value": 30
+        },
+        {
+            "type": "centipawn",
+            "value": 109
+        },
+        {
+            "type": "centipawn",
+            "value": -220
+        },
+        {
+            "type": "centipawn",
+            "value": 14
+        },
+        {
+            "type": "centipawn",
+            "value": 5
+        },
+        {
+            "type": "centipawn",
+            "value": 4
+        },
+        {
+            "type": "centipawn",
+            "value": -3
+        },
+        {
+            "type": "centipawn",
+            "value": 60
+        },
+        {
+            "type": "centipawn",
+            "value": 71
+        },
+        {
+            "type": "centipawn",
+            "value": 588
+        },
+        {
+            "type": "centipawn",
+            "value": 605
+        },
+        {
+            "type": "centipawn",
+            "value": 637
+        },
+        {
+            "type": "centipawn",
+            "value": 27
+        },
+        {
+            "type": "centipawn",
+            "value": 141
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": -455
+        },
+        {
+            "type": "centipawn",
+            "value": 14
+        },
+        {
+            "type": "centipawn",
+            "value": -4
+        },
+        {
+            "type": "centipawn",
+            "value": -3
+        },
+        {
+            "type": "centipawn",
+            "value": -3
+        },
+        {
+            "type": "centipawn",
+            "value": 298
+        },
+        {
+            "type": "centipawn",
+            "value": 295
+        },
+        {
+            "type": "centipawn",
+            "value": 306
+        },
+        {
+            "type": "centipawn",
+            "value": 80
+        },
+        {
+            "type": "centipawn",
+            "value": 81
+        },
+        {
+            "type": "centipawn",
+            "value": 73
+        },
+        {
+            "type": "centipawn",
+            "value": 297
+        },
+        {
+            "type": "centipawn",
+            "value": 106
+        },
+        {
+            "type": "centipawn",
+            "value": 403
+        },
+        {
+            "type": "centipawn",
+            "value": 400
+        },
+        {
+            "type": "centipawn",
+            "value": 619
+        },
+        {
+            "type": "centipawn",
+            "value": 639
+        },
+        {
+            "type": "centipawn",
+            "value": 841
+        },
+        {
+            "type": "centipawn",
+            "value": 897
+        }
+    ],
+    [
+        {
+            "type": "centipawn",
+            "value": 33
+        },
+        {
+            "type": "centipawn",
+            "value": 30
+        },
+        {
+            "type": "centipawn",
+            "value": 23
+        },
+        {
+            "type": "centipawn",
+            "value": 28
+        },
+        {
+            "type": "centipawn",
+            "value": -14
+        },
+        {
+            "type": "centipawn",
+            "value": -16
+        },
+        {
+            "type": "centipawn",
+            "value": -27
+        },
+        {
+            "type": "centipawn",
+            "value": -19
+        },
+        {
+            "type": "centipawn",
+            "value": -33
+        },
+        {
+            "type": "centipawn",
+            "value": -19
+        },
+        {
+            "type": "centipawn",
+            "value": -13
+        },
+        {
+            "type": "centipawn",
+            "value": -1
+        },
+        {
+            "type": "centipawn",
+            "value": -7
+        },
+        {
+            "type": "centipawn",
+            "value": -7
+        },
+        {
+            "type": "centipawn",
+            "value": -13
+        },
+        {
+            "type": "centipawn",
+            "value": 9
+        },
+        {
+            "type": "centipawn",
+            "value": 13
+        },
+        {
+            "type": "centipawn",
+            "value": 121
+        },
+        {
+            "type": "centipawn",
+            "value": 80
+        },
+        {
+            "type": "centipawn",
+            "value": 131
+        },
+        {
+            "type": "centipawn",
+            "value": 77
+        },
+        {
+            "type": "centipawn",
+            "value": 110
+        },
+        {
+            "type": "centipawn",
+            "value": -15
+        },
+        {
+            "type": "centipawn",
+            "value": -13
+        },
+        {
+            "type": "centipawn",
+            "value": -9
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": -5
+        },
+        {
+            "type": "centipawn",
+            "value": -5
+        },
+        {
+            "type": "centipawn",
+            "value": -11
+        },
+        {
+            "type": "centipawn",
+            "value": -2
+        },
+        {
+            "type": "centipawn",
+            "value": 1
+        },
+        {
+            "type": "centipawn",
+            "value": 9
+        },
+        {
+            "type": "centipawn",
+            "value": -24
+        },
+        {
+            "type": "centipawn",
+            "value": -24
+        },
+        {
+            "type": "centipawn",
+            "value": -30
+        },
+        {
+            "type": "centipawn",
+            "value": -31
+        },
+        {
+            "type": "centipawn",
+            "value": -70
+        },
+        {
+            "type": "centipawn",
+            "value": -72
+        },
+        {
+            "type": "centipawn",
+            "value": -71
+        },
+        {
+            "type": "centipawn",
+            "value": -19
+        },
+        {
+            "type": "centipawn",
+            "value": -108
+        },
+        {
+            "type": "centipawn",
+            "value": -96
+        },
+        {
+            "type": "centipawn",
+            "value": -88
+        },
+        {
+            "type": "centipawn",
+            "value": -65
+        },
+        {
+            "type": "centipawn",
+            "value": -60
+        },
+        {
+            "type": "centipawn",
+            "value": -31
+        },
+        {
+            "type": "centipawn",
+            "value": -292
+        },
+        {
+            "type": "centipawn",
+            "value": -308
+        },
+        {
+            "type": "centipawn",
+            "value": -477
+        },
+        {
+            "type": "centipawn",
+            "value": -498
+        },
+        {
+            "type": "centipawn",
+            "value": -502
+        },
+        {
+            "type": "centipawn",
+            "value": -499
+        },
+        {
+            "type": "centipawn",
+            "value": -516
+        },
+        {
+            "type": "centipawn",
+            "value": -486
+        },
+        {
+            "type": "centipawn",
+            "value": -597
+        },
+        {
+            "type": "centipawn",
+            "value": -601
+        },
+        {
+            "type": "centipawn",
+            "value": -589
+        },
+        {
+            "type": "centipawn",
+            "value": -615
+        },
+        {
+            "type": "centipawn",
+            "value": -663
+        },
+        {
+            "type": "centipawn",
+            "value": -664
+        },
+        {
+            "type": "centipawn",
+            "value": -657
+        }
+    ],
+    [
+        {
+            "type": "centipawn",
+            "value": 33
+        },
+        {
+            "type": "centipawn",
+            "value": 30
+        },
+        {
+            "type": "centipawn",
+            "value": 31
+        },
+        {
+            "type": "centipawn",
+            "value": 38
+        },
+        {
+            "type": "centipawn",
+            "value": 68
+        },
+        {
+            "type": "centipawn",
+            "value": 166
+        },
+        {
+            "type": "centipawn",
+            "value": 168
+        },
+        {
+            "type": "centipawn",
+            "value": 166
+        },
+        {
+            "type": "centipawn",
+            "value": 182
+        },
+        {
+            "type": "centipawn",
+            "value": 177
+        },
+        {
+            "type": "centipawn",
+            "value": 188
+        },
+        {
+            "type": "centipawn",
+            "value": 194
+        },
+        {
+            "type": "centipawn",
+            "value": 229
+        },
+        {
+            "type": "centipawn",
+            "value": 215
+        },
+        {
+            "type": "centipawn",
+            "value": 201
+        },
+        {
+            "type": "centipawn",
+            "value": 468
+        },
+        {
+            "type": "centipawn",
+            "value": 459
+        },
+        {
+            "type": "centipawn",
+            "value": 565
+        },
+        {
+            "type": "centipawn",
+            "value": 562
+        },
+        {
+            "type": "centipawn",
+            "value": 563
+        },
+        {
+            "type": "centipawn",
+            "value": 573
+        },
+        {
+            "type": "centipawn",
+            "value": 603
+        },
+        {
+            "type": "centipawn",
+            "value": 555
+        },
+        {
+            "type": "centipawn",
+            "value": 610
+        },
+        {
+            "type": "centipawn",
+            "value": 634
+        },
+        {
+            "type": "centipawn",
+            "value": 679
+        },
+        {
+            "type": "centipawn",
+            "value": 742
+        },
+        {
+            "type": "centipawn",
+            "value": 753
+        },
+        {
+            "type": "centipawn",
+            "value": 774
+        },
+        {
+            "type": "centipawn",
+            "value": 823
+        },
+        {
+            "type": "centipawn",
+            "value": 1050
+        },
+        {
+            "type": "centipawn",
+            "value": 1081
+        },
+        {
+            "type": "centipawn",
+            "value": 1122
+        },
+        {
+            "type": "mate",
+            "value": "M7"
+        },
+        {
+            "type": "mate",
+            "value": "M5"
+        },
+        {
+            "type": "mate",
+            "value": "M5"
+        },
+        {
+            "type": "mate",
+            "value": "M4"
+        },
+        {
+            "type": "mate",
+            "value": "M4"
+        },
+        {
+            "type": "mate",
+            "value": "M3"
+        }
+    ],
+    [
+        {
+            "type": "centipawn",
+            "value": 32
+        },
+        {
+            "type": "centipawn",
+            "value": 27
+        },
+        {
+            "type": "centipawn",
+            "value": 37
+        },
+        {
+            "type": "centipawn",
+            "value": 35
+        },
+        {
+            "type": "centipawn",
+            "value": 49
+        },
+        {
+            "type": "centipawn",
+            "value": 49
+        },
+        {
+            "type": "centipawn",
+            "value": 46
+        },
+        {
+            "type": "centipawn",
+            "value": 45
+        },
+        {
+            "type": "centipawn",
+            "value": 48
+        },
+        {
+            "type": "centipawn",
+            "value": 43
+        },
+        {
+            "type": "centipawn",
+            "value": 43
+        },
+        {
+            "type": "centipawn",
+            "value": 54
+        },
+        {
+            "type": "centipawn",
+            "value": 47
+        },
+        {
+            "type": "centipawn",
+            "value": 49
+        },
+        {
+            "type": "centipawn",
+            "value": 44
+        },
+        {
+            "type": "centipawn",
+            "value": 48
+        },
+        {
+            "type": "centipawn",
+            "value": 35
+        },
+        {
+            "type": "centipawn",
+            "value": 26
+        },
+        {
+            "type": "centipawn",
+            "value": 33
+        },
+        {
+            "type": "centipawn",
+            "value": 77
+        },
+        {
+            "type": "centipawn",
+            "value": 44
+        },
+        {
+            "type": "centipawn",
+            "value": 37
+        },
+        {
+            "type": "centipawn",
+            "value": 25
+        },
+        {
+            "type": "centipawn",
+            "value": 88
+        },
+        {
+            "type": "centipawn",
+            "value": 60
+        },
+        {
+            "type": "centipawn",
+            "value": 188
+        },
+        {
+            "type": "centipawn",
+            "value": 181
+        },
+        {
+            "type": "centipawn",
+            "value": 428
+        },
+        {
+            "type": "centipawn",
+            "value": 433
+        },
+        {
+            "type": "centipawn",
+            "value": 458
+        },
+        {
+            "type": "centipawn",
+            "value": 478
+        },
+        {
+            "type": "centipawn",
+            "value": 518
+        },
+        {
+            "type": "centipawn",
+            "value": 524
+        },
+        {
+            "type": "centipawn",
+            "value": 597
+        },
+        {
+            "type": "centipawn",
+            "value": 606
+        },
+        {
+            "type": "centipawn",
+            "value": 681
+        },
+        {
+            "type": "centipawn",
+            "value": 700
+        }
+    ],
+    [
+        {
+            "type": "centipawn",
+            "value": 23
+        },
+        {
+            "type": "centipawn",
+            "value": 59
+        },
+        {
+            "type": "centipawn",
+            "value": 53
+        },
+        {
+            "type": "centipawn",
+            "value": 50
+        },
+        {
+            "type": "centipawn",
+            "value": 39
+        },
+        {
+            "type": "centipawn",
+            "value": 48
+        },
+        {
+            "type": "centipawn",
+            "value": 47
+        },
+        {
+            "type": "centipawn",
+            "value": 46
+        },
+        {
+            "type": "centipawn",
+            "value": 46
+        },
+        {
+            "type": "centipawn",
+            "value": 59
+        },
+        {
+            "type": "centipawn",
+            "value": 64
+        },
+        {
+            "type": "centipawn",
+            "value": 68
+        },
+        {
+            "type": "centipawn",
+            "value": 51
+        },
+        {
+            "type": "centipawn",
+            "value": 54
+        },
+        {
+            "type": "centipawn",
+            "value": 62
+        },
+        {
+            "type": "centipawn",
+            "value": 54
+        },
+        {
+            "type": "centipawn",
+            "value": 57
+        },
+        {
+            "type": "centipawn",
+            "value": 58
+        },
+        {
+            "type": "centipawn",
+            "value": 53
+        },
+        {
+            "type": "centipawn",
+            "value": 44
+        },
+        {
+            "type": "centipawn",
+            "value": 44
+        },
+        {
+            "type": "centipawn",
+            "value": 44
+        },
+        {
+            "type": "centipawn",
+            "value": 27
+        },
+        {
+            "type": "centipawn",
+            "value": 25
+        },
+        {
+            "type": "centipawn",
+            "value": 24
+        },
+        {
+            "type": "centipawn",
+            "value": 41
+        },
+        {
+            "type": "centipawn",
+            "value": 21
+        },
+        {
+            "type": "centipawn",
+            "value": 31
+        },
+        {
+            "type": "centipawn",
+            "value": 36
+        },
+        {
+            "type": "centipawn",
+            "value": 38
+        },
+        {
+            "type": "centipawn",
+            "value": 39
+        },
+        {
+            "type": "centipawn",
+            "value": 43
+        },
+        {
+            "type": "centipawn",
+            "value": 9
+        },
+        {
+            "type": "centipawn",
+            "value": 28
+        },
+        {
+            "type": "centipawn",
+            "value": 7
+        },
+        {
+            "type": "centipawn",
+            "value": 76
+        },
+        {
+            "type": "centipawn",
+            "value": 60
+        },
+        {
+            "type": "centipawn",
+            "value": 62
+        },
+        {
+            "type": "centipawn",
+            "value": 58
+        },
+        {
+            "type": "centipawn",
+            "value": 70
+        },
+        {
+            "type": "centipawn",
+            "value": 67
+        },
+        {
+            "type": "centipawn",
+            "value": 96
+        },
+        {
+            "type": "centipawn",
+            "value": 87
+        },
+        {
+            "type": "centipawn",
+            "value": 85
+        },
+        {
+            "type": "centipawn",
+            "value": 58
+        },
+        {
+            "type": "centipawn",
+            "value": 92
+        },
+        {
+            "type": "centipawn",
+            "value": 80
+        },
+        {
+            "type": "centipawn",
+            "value": 76
+        },
+        {
+            "type": "centipawn",
+            "value": 78
+        },
+        {
+            "type": "centipawn",
+            "value": 77
+        },
+        {
+            "type": "centipawn",
+            "value": 27
+        },
+        {
+            "type": "centipawn",
+            "value": 13
+        },
+        {
+            "type": "centipawn",
+            "value": 2
+        },
+        {
+            "type": "centipawn",
+            "value": 79
+        },
+        {
+            "type": "centipawn",
+            "value": -16
+        },
+        {
+            "type": "centipawn",
+            "value": -18
+        },
+        {
+            "type": "centipawn",
+            "value": -11
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 21
+        },
+        {
+            "type": "centipawn",
+            "value": -20
+        },
+        {
+            "type": "centipawn",
+            "value": -14
+        },
+        {
+            "type": "centipawn",
+            "value": -13
+        },
+        {
+            "type": "centipawn",
+            "value": -6
+        },
+        {
+            "type": "centipawn",
+            "value": -30
+        },
+        {
+            "type": "centipawn",
+            "value": -13
+        },
+        {
+            "type": "centipawn",
+            "value": -4
+        },
+        {
+            "type": "centipawn",
+            "value": -9
+        },
+        {
+            "type": "centipawn",
+            "value": -11
+        },
+        {
+            "type": "centipawn",
+            "value": -10
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": -936
+        },
+        {
+            "type": "centipawn",
+            "value": -989
+        }
+    ],
+    [
+        {
+            "type": "centipawn",
+            "value": 16
+        },
+        {
+            "type": "centipawn",
+            "value": 32
+        },
+        {
+            "type": "centipawn",
+            "value": 16
+        },
+        {
+            "type": "centipawn",
+            "value": 15
+        },
+        {
+            "type": "centipawn",
+            "value": 1
+        },
+        {
+            "type": "centipawn",
+            "value": 8
+        },
+        {
+            "type": "centipawn",
+            "value": 10
+        },
+        {
+            "type": "centipawn",
+            "value": 59
+        },
+        {
+            "type": "centipawn",
+            "value": -11
+        },
+        {
+            "type": "centipawn",
+            "value": 14
+        },
+        {
+            "type": "centipawn",
+            "value": 4
+        },
+        {
+            "type": "centipawn",
+            "value": 13
+        },
+        {
+            "type": "centipawn",
+            "value": -6
+        },
+        {
+            "type": "centipawn",
+            "value": -15
+        },
+        {
+            "type": "centipawn",
+            "value": -18
+        },
+        {
+            "type": "centipawn",
+            "value": -10
+        },
+        {
+            "type": "centipawn",
+            "value": -15
+        },
+        {
+            "type": "centipawn",
+            "value": 62
+        },
+        {
+            "type": "centipawn",
+            "value": 49
+        },
+        {
+            "type": "centipawn",
+            "value": 35
+        },
+        {
+            "type": "centipawn",
+            "value": 40
+        },
+        {
+            "type": "centipawn",
+            "value": 46
+        },
+        {
+            "type": "centipawn",
+            "value": 48
+        },
+        {
+            "type": "centipawn",
+            "value": 284
+        },
+        {
+            "type": "centipawn",
+            "value": -9
+        },
+        {
+            "type": "centipawn",
+            "value": 41
+        },
+        {
+            "type": "centipawn",
+            "value": 35
+        },
+        {
+            "type": "centipawn",
+            "value": 41
+        },
+        {
+            "type": "centipawn",
+            "value": 37
+        },
+        {
+            "type": "centipawn",
+            "value": 37
+        },
+        {
+            "type": "centipawn",
+            "value": 3
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": -71
+        },
+        {
+            "type": "centipawn",
+            "value": 43
+        },
+        {
+            "type": "centipawn",
+            "value": -29
+        },
+        {
+            "type": "centipawn",
+            "value": 46
+        },
+        {
+            "type": "centipawn",
+            "value": 71
+        },
+        {
+            "type": "centipawn",
+            "value": 47
+        },
+        {
+            "type": "centipawn",
+            "value": 57
+        },
+        {
+            "type": "centipawn",
+            "value": 55
+        },
+        {
+            "type": "centipawn",
+            "value": 36
+        },
+        {
+            "type": "centipawn",
+            "value": 131
+        },
+        {
+            "type": "centipawn",
+            "value": 19
+        },
+        {
+            "type": "centipawn",
+            "value": 19
+        },
+        {
+            "type": "centipawn",
+            "value": 7
+        },
+        {
+            "type": "centipawn",
+            "value": 7
+        },
+        {
+            "type": "centipawn",
+            "value": 5
+        },
+        {
+            "type": "centipawn",
+            "value": 6
+        },
+        {
+            "type": "centipawn",
+            "value": 5
+        },
+        {
+            "type": "centipawn",
+            "value": 489
+        },
+        {
+            "type": "centipawn",
+            "value": 7
+        },
+        {
+            "type": "centipawn",
+            "value": 5
+        },
+        {
+            "type": "centipawn",
+            "value": 4
+        },
+        {
+            "type": "centipawn",
+            "value": 4
+        },
+        {
+            "type": "centipawn",
+            "value": 5
+        },
+        {
+            "type": "centipawn",
+            "value": 7
+        },
+        {
+            "type": "centipawn",
+            "value": 8
+        },
+        {
+            "type": "centipawn",
+            "value": 9
+        },
+        {
+            "type": "centipawn",
+            "value": 10
+        },
+        {
+            "type": "centipawn",
+            "value": 8
+        },
+        {
+            "type": "centipawn",
+            "value": 8
+        },
+        {
+            "type": "centipawn",
+            "value": 16
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 1
+        },
+        {
+            "type": "centipawn",
+            "value": 16
+        },
+        {
+            "type": "centipawn",
+            "value": 16
+        },
+        {
+            "type": "centipawn",
+            "value": 15
+        },
+        {
+            "type": "centipawn",
+            "value": 12
+        },
+        {
+            "type": "centipawn",
+            "value": 11
+        },
+        {
+            "type": "centipawn",
+            "value": 9
+        },
+        {
+            "type": "centipawn",
+            "value": 8
+        },
+        {
+            "type": "centipawn",
+            "value": 5
+        },
+        {
+            "type": "centipawn",
+            "value": 2
+        },
+        {
+            "type": "centipawn",
+            "value": 1
+        },
+        {
+            "type": "centipawn",
+            "value": 1
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        }
+    ],
+    [
+        {
+            "type": "centipawn",
+            "value": 32
+        },
+        {
+            "type": "centipawn",
+            "value": 30
+        },
+        {
+            "type": "centipawn",
+            "value": 25
+        },
+        {
+            "type": "centipawn",
+            "value": 40
+        },
+        {
+            "type": "centipawn",
+            "value": 56
+        },
+        {
+            "type": "centipawn",
+            "value": 52
+        },
+        {
+            "type": "centipawn",
+            "value": 53
+        },
+        {
+            "type": "centipawn",
+            "value": 44
+        },
+        {
+            "type": "centipawn",
+            "value": 35
+        },
+        {
+            "type": "centipawn",
+            "value": 35
+        },
+        {
+            "type": "centipawn",
+            "value": 32
+        },
+        {
+            "type": "centipawn",
+            "value": 28
+        },
+        {
+            "type": "centipawn",
+            "value": 22
+        },
+        {
+            "type": "centipawn",
+            "value": 89
+        },
+        {
+            "type": "centipawn",
+            "value": 45
+        },
+        {
+            "type": "centipawn",
+            "value": 52
+        },
+        {
+            "type": "centipawn",
+            "value": 57
+        },
+        {
+            "type": "centipawn",
+            "value": 52
+        },
+        {
+            "type": "centipawn",
+            "value": 48
+        },
+        {
+            "type": "centipawn",
+            "value": 48
+        },
+        {
+            "type": "centipawn",
+            "value": 51
+        },
+        {
+            "type": "centipawn",
+            "value": 50
+        },
+        {
+            "type": "centipawn",
+            "value": 48
+        },
+        {
+            "type": "centipawn",
+            "value": 44
+        },
+        {
+            "type": "centipawn",
+            "value": 41
+        },
+        {
+            "type": "centipawn",
+            "value": 46
+        },
+        {
+            "type": "centipawn",
+            "value": 53
+        },
+        {
+            "type": "centipawn",
+            "value": 76
+        },
+        {
+            "type": "centipawn",
+            "value": 98
+        },
+        {
+            "type": "centipawn",
+            "value": 100
+        },
+        {
+            "type": "centipawn",
+            "value": 28
+        },
+        {
+            "type": "centipawn",
+            "value": 31
+        },
+        {
+            "type": "centipawn",
+            "value": 38
+        },
+        {
+            "type": "centipawn",
+            "value": 101
+        },
+        {
+            "type": "centipawn",
+            "value": 87
+        },
+        {
+            "type": "centipawn",
+            "value": 95
+        },
+        {
+            "type": "centipawn",
+            "value": 93
+        },
+        {
+            "type": "centipawn",
+            "value": 113
+        },
+        {
+            "type": "centipawn",
+            "value": 83
+        },
+        {
+            "type": "centipawn",
+            "value": 148
+        },
+        {
+            "type": "centipawn",
+            "value": 146
+        },
+        {
+            "type": "centipawn",
+            "value": 145
+        },
+        {
+            "type": "centipawn",
+            "value": 112
+        },
+        {
+            "type": "centipawn",
+            "value": 234
+        },
+        {
+            "type": "centipawn",
+            "value": 209
+        },
+        {
+            "type": "centipawn",
+            "value": 184
+        },
+        {
+            "type": "centipawn",
+            "value": 199
+        },
+        {
+            "type": "centipawn",
+            "value": 210
+        },
+        {
+            "type": "centipawn",
+            "value": 202
+        },
+        {
+            "type": "centipawn",
+            "value": 194
+        },
+        {
+            "type": "centipawn",
+            "value": 165
+        },
+        {
+            "type": "centipawn",
+            "value": 198
+        },
+        {
+            "type": "centipawn",
+            "value": 215
+        },
+        {
+            "type": "centipawn",
+            "value": 217
+        },
+        {
+            "type": "centipawn",
+            "value": 231
+        },
+        {
+            "type": "centipawn",
+            "value": 216
+        },
+        {
+            "type": "centipawn",
+            "value": 223
+        },
+        {
+            "type": "centipawn",
+            "value": 197
+        },
+        {
+            "type": "centipawn",
+            "value": 223
+        },
+        {
+            "type": "centipawn",
+            "value": 239
+        },
+        {
+            "type": "centipawn",
+            "value": 188
+        },
+        {
+            "type": "centipawn",
+            "value": 349
+        },
+        {
+            "type": "centipawn",
+            "value": 353
+        },
+        {
+            "type": "centipawn",
+            "value": 726
+        },
+        {
+            "type": "centipawn",
+            "value": 713
+        },
+        {
+            "type": "mate",
+            "value": "M3"
+        },
+        {
+            "type": "mate",
+            "value": "M2"
+        }
+    ],
+    [
+        {
+            "type": "centipawn",
+            "value": 27
+        },
+        {
+            "type": "centipawn",
+            "value": 27
+        },
+        {
+            "type": "centipawn",
+            "value": 25
+        },
+        {
+            "type": "centipawn",
+            "value": 31
+        },
+        {
+            "type": "centipawn",
+            "value": 32
+        },
+        {
+            "type": "centipawn",
+            "value": 25
+        },
+        {
+            "type": "centipawn",
+            "value": 23
+        },
+        {
+            "type": "centipawn",
+            "value": 63
+        },
+        {
+            "type": "centipawn",
+            "value": 16
+        },
+        {
+            "type": "centipawn",
+            "value": 36
+        },
+        {
+            "type": "centipawn",
+            "value": 36
+        },
+        {
+            "type": "centipawn",
+            "value": 39
+        },
+        {
+            "type": "centipawn",
+            "value": -5
+        },
+        {
+            "type": "centipawn",
+            "value": -2
+        },
+        {
+            "type": "centipawn",
+            "value": -18
+        },
+        {
+            "type": "centipawn",
+            "value": -16
+        },
+        {
+            "type": "centipawn",
+            "value": -18
+        },
+        {
+            "type": "centipawn",
+            "value": -14
+        },
+        {
+            "type": "centipawn",
+            "value": -14
+        },
+        {
+            "type": "centipawn",
+            "value": -21
+        },
+        {
+            "type": "centipawn",
+            "value": -22
+        },
+        {
+            "type": "centipawn",
+            "value": -3
+        },
+        {
+            "type": "centipawn",
+            "value": -6
+        },
+        {
+            "type": "centipawn",
+            "value": -3
+        },
+        {
+            "type": "centipawn",
+            "value": -21
+        },
+        {
+            "type": "centipawn",
+            "value": -10
+        },
+        {
+            "type": "centipawn",
+            "value": -17
+        },
+        {
+            "type": "centipawn",
+            "value": 50
+        },
+        {
+            "type": "centipawn",
+            "value": -4
+        },
+        {
+            "type": "centipawn",
+            "value": 26
+        },
+        {
+            "type": "centipawn",
+            "value": -2
+        },
+        {
+            "type": "centipawn",
+            "value": -14
+        },
+        {
+            "type": "centipawn",
+            "value": -46
+        },
+        {
+            "type": "centipawn",
+            "value": -16
+        }
+    ],
+    [
+        {
+            "type": "centipawn",
+            "value": 27
+        },
+        {
+            "type": "centipawn",
+            "value": 28
+        },
+        {
+            "type": "centipawn",
+            "value": 30
+        },
+        {
+            "type": "centipawn",
+            "value": 26
+        },
+        {
+            "type": "centipawn",
+            "value": 29
+        },
+        {
+            "type": "centipawn",
+            "value": 50
+        },
+        {
+            "type": "centipawn",
+            "value": -18
+        },
+        {
+            "type": "centipawn",
+            "value": 116
+        },
+        {
+            "type": "centipawn",
+            "value": 123
+        },
+        {
+            "type": "centipawn",
+            "value": 111
+        },
+        {
+            "type": "centipawn",
+            "value": 110
+        },
+        {
+            "type": "centipawn",
+            "value": 116
+        },
+        {
+            "type": "centipawn",
+            "value": 131
+        },
+        {
+            "type": "centipawn",
+            "value": 129
+        },
+        {
+            "type": "centipawn",
+            "value": 126
+        },
+        {
+            "type": "centipawn",
+            "value": 155
+        },
+        {
+            "type": "centipawn",
+            "value": 154
+        },
+        {
+            "type": "centipawn",
+            "value": 148
+        },
+        {
+            "type": "centipawn",
+            "value": 137
+        },
+        {
+            "type": "centipawn",
+            "value": 149
+        },
+        {
+            "type": "centipawn",
+            "value": 144
+        },
+        {
+            "type": "centipawn",
+            "value": 151
+        },
+        {
+            "type": "centipawn",
+            "value": 132
+        },
+        {
+            "type": "centipawn",
+            "value": 136
+        },
+        {
+            "type": "centipawn",
+            "value": 89
+        },
+        {
+            "type": "centipawn",
+            "value": 153
+        },
+        {
+            "type": "centipawn",
+            "value": 115
+        },
+        {
+            "type": "centipawn",
+            "value": 108
+        },
+        {
+            "type": "centipawn",
+            "value": 102
+        },
+        {
+            "type": "centipawn",
+            "value": 95
+        },
+        {
+            "type": "centipawn",
+            "value": 98
+        },
+        {
+            "type": "centipawn",
+            "value": 170
+        },
+        {
+            "type": "centipawn",
+            "value": 80
+        },
+        {
+            "type": "centipawn",
+            "value": 159
+        },
+        {
+            "type": "centipawn",
+            "value": 149
+        },
+        {
+            "type": "centipawn",
+            "value": 144
+        },
+        {
+            "type": "centipawn",
+            "value": 150
+        },
+        {
+            "type": "centipawn",
+            "value": 243
+        },
+        {
+            "type": "centipawn",
+            "value": 126
+        },
+        {
+            "type": "centipawn",
+            "value": 125
+        },
+        {
+            "type": "centipawn",
+            "value": 108
+        },
+        {
+            "type": "centipawn",
+            "value": 101
+        },
+        {
+            "type": "centipawn",
+            "value": 141
+        },
+        {
+            "type": "centipawn",
+            "value": 142
+        },
+        {
+            "type": "centipawn",
+            "value": 148
+        },
+        {
+            "type": "centipawn",
+            "value": 146
+        },
+        {
+            "type": "centipawn",
+            "value": 1
+        },
+        {
+            "type": "centipawn",
+            "value": 49
+        },
+        {
+            "type": "centipawn",
+            "value": 3
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": -58
+        },
+        {
+            "type": "centipawn",
+            "value": 12
+        },
+        {
+            "type": "centipawn",
+            "value": 16
+        },
+        {
+            "type": "centipawn",
+            "value": 16
+        },
+        {
+            "type": "centipawn",
+            "value": 7
+        },
+        {
+            "type": "centipawn",
+            "value": 38
+        },
+        {
+            "type": "centipawn",
+            "value": -48
+        },
+        {
+            "type": "centipawn",
+            "value": 125
+        },
+        {
+            "type": "centipawn",
+            "value": 120
+        },
+        {
+            "type": "centipawn",
+            "value": 105
+        },
+        {
+            "type": "centipawn",
+            "value": 86
+        },
+        {
+            "type": "centipawn",
+            "value": 109
+        },
+        {
+            "type": "centipawn",
+            "value": -284
+        },
+        {
+            "type": "centipawn",
+            "value": -308
+        },
+        {
+            "type": "centipawn",
+            "value": -563
+        },
+        {
+            "type": "centipawn",
+            "value": -415
+        },
+        {
+            "type": "centipawn",
+            "value": -468
+        },
+        {
+            "type": "centipawn",
+            "value": -475
+        },
+        {
+            "type": "centipawn",
+            "value": -487
+        },
+        {
+            "type": "centipawn",
+            "value": -494
+        },
+        {
+            "type": "centipawn",
+            "value": -501
+        },
+        {
+            "type": "centipawn",
+            "value": -501
+        },
+        {
+            "type": "centipawn",
+            "value": -509
+        },
+        {
+            "type": "centipawn",
+            "value": -513
+        },
+        {
+            "type": "centipawn",
+            "value": -535
+        },
+        {
+            "type": "centipawn",
+            "value": -521
+        },
+        {
+            "type": "centipawn",
+            "value": -553
+        },
+        {
+            "type": "centipawn",
+            "value": -418
+        },
+        {
+            "type": "centipawn",
+            "value": -453
+        },
+        {
+            "type": "centipawn",
+            "value": -440
+        },
+        {
+            "type": "centipawn",
+            "value": -477
+        },
+        {
+            "type": "centipawn",
+            "value": -354
+        },
+        {
+            "type": "centipawn",
+            "value": -636
+        },
+        {
+            "type": "centipawn",
+            "value": -683
+        },
+        {
+            "type": "centipawn",
+            "value": -705
+        },
+        {
+            "type": "centipawn",
+            "value": -709
+        },
+        {
+            "type": "centipawn",
+            "value": -717
+        },
+        {
+            "type": "centipawn",
+            "value": -757
+        },
+        {
+            "type": "centipawn",
+            "value": -774
+        },
+        {
+            "type": "centipawn",
+            "value": -767
+        },
+        {
+            "type": "centipawn",
+            "value": -789
+        },
+        {
+            "type": "centipawn",
+            "value": -1076
+        },
+        {
+            "type": "mate",
+            "value": "M-5"
+        },
+        {
+            "type": "centipawn",
+            "value": -734
+        },
+        {
+            "type": "mate",
+            "value": "M-5"
+        },
+        {
+            "type": "mate",
+            "value": "M-4"
+        }
+    ],
+    [
+        {
+            "type": "centipawn",
+            "value": -119
+        },
+        {
+            "type": "centipawn",
+            "value": -129
+        },
+        {
+            "type": "centipawn",
+            "value": -127
+        },
+        {
+            "type": "centipawn",
+            "value": -153
+        },
+        {
+            "type": "centipawn",
+            "value": -156
+        },
+        {
+            "type": "centipawn",
+            "value": -129
+        },
+        {
+            "type": "centipawn",
+            "value": -134
+        },
+        {
+            "type": "centipawn",
+            "value": -20
+        },
+        {
+            "type": "centipawn",
+            "value": -53
+        },
+        {
+            "type": "centipawn",
+            "value": -49
+        },
+        {
+            "type": "centipawn",
+            "value": -57
+        },
+        {
+            "type": "centipawn",
+            "value": 74
+        },
+        {
+            "type": "centipawn",
+            "value": 33
+        },
+        {
+            "type": "centipawn",
+            "value": 83
+        },
+        {
+            "type": "centipawn",
+            "value": 52
+        },
+        {
+            "type": "centipawn",
+            "value": 66
+        },
+        {
+            "type": "centipawn",
+            "value": 65
+        },
+        {
+            "type": "centipawn",
+            "value": 63
+        },
+        {
+            "type": "centipawn",
+            "value": 60
+        },
+        {
+            "type": "centipawn",
+            "value": 112
+        },
+        {
+            "type": "centipawn",
+            "value": 61
+        },
+        {
+            "type": "centipawn",
+            "value": 55
+        },
+        {
+            "type": "centipawn",
+            "value": 20
+        },
+        {
+            "type": "centipawn",
+            "value": 34
+        },
+        {
+            "type": "centipawn",
+            "value": 22
+        },
+        {
+            "type": "centipawn",
+            "value": 93
+        },
+        {
+            "type": "centipawn",
+            "value": -1
+        },
+        {
+            "type": "centipawn",
+            "value": -25
+        },
+        {
+            "type": "centipawn",
+            "value": -37
+        },
+        {
+            "type": "centipawn",
+            "value": -14
+        },
+        {
+            "type": "centipawn",
+            "value": -17
+        },
+        {
+            "type": "centipawn",
+            "value": 0
+        },
+        {
+            "type": "centipawn",
+            "value": -32
+        },
+        {
+            "type": "centipawn",
+            "value": 12
+        },
+        {
+            "type": "centipawn",
+            "value": -2
+        },
+        {
+            "type": "centipawn",
+            "value": 53
+        },
+        {
+            "type": "centipawn",
+            "value": 53
+        },
+        {
+            "type": "centipawn",
+            "value": 67
+        },
+        {
+            "type": "centipawn",
+            "value": 51
+        },
+        {
+            "type": "centipawn",
+            "value": 39
+        },
+        {
+            "type": "centipawn",
+            "value": -2
+        },
+        {
+            "type": "centipawn",
+            "value": 57
+        },
+        {
+            "type": "centipawn",
+            "value": -126
+        },
+        {
+            "type": "centipawn",
+            "value": -51
+        },
+        {
+            "type": "centipawn",
+            "value": -32
+        },
+        {
+            "type": "centipawn",
+            "value": -30
+        },
+        {
+            "type": "centipawn",
+            "value": -29
+        },
+        {
+            "type": "centipawn",
+            "value": -34
+        },
+        {
+            "type": "centipawn",
+            "value": -82
+        },
+        {
+            "type": "centipawn",
+            "value": -77
+        },
+        {
+            "type": "centipawn",
+            "value": -156
+        },
+        {
+            "type": "centipawn",
+            "value": 7
+        },
+        {
+            "type": "centipawn",
+            "value": 10
+        },
+        {
+            "type": "centipawn",
+            "value": 356
+        },
+        {
+            "type": "centipawn",
+            "value": 343
+        },
+        {
+            "type": "centipawn",
+            "value": 348
+        },
+        {
+            "type": "centipawn",
+            "value": 355
+        },
+        {
+            "type": "centipawn",
+            "value": 382
+        },
+        {
+            "type": "centipawn",
+            "value": 396
+        },
+        {
+            "type": "centipawn",
+            "value": 1000
+        },
+        {
+            "type": "centipawn",
+            "value": 552
+        },
+        {
+            "type": "centipawn",
+            "value": 538
+        },
+        {
+            "type": "centipawn",
+            "value": 552
+        }
+    ],
+    [
+        {
+            "type": "centipawn",
+            "value": 32
+        },
+        {
+            "type": "centipawn",
+            "value": 28
+        },
+        {
+            "type": "centipawn",
+            "value": 21
+        },
+        {
+            "type": "centipawn",
+            "value": 42
+        },
+        {
+            "type": "centipawn",
+            "value": -9
+        },
+        {
+            "type": "centipawn",
+            "value": 110
+        },
+        {
+            "type": "centipawn",
+            "value": -12
+        },
+        {
+            "type": "centipawn",
+            "value": 9
+        },
+        {
+            "type": "centipawn",
+            "value": 6
+        },
+        {
+            "type": "centipawn",
+            "value": -5
+        },
+        {
+            "type": "centipawn",
+            "value": -5
+        },
+        {
+            "type": "centipawn",
+            "value": 15
+        },
+        {
+            "type": "centipawn",
+            "value": -2
+        },
+        {
+            "type": "centipawn",
+            "value": 5
+        },
+        {
+            "type": "centipawn",
+            "value": -8
+        },
+        {
+            "type": "centipawn",
+            "value": 8
+        },
+        {
+            "type": "centipawn",
+            "value": -16
+        },
+        {
+            "type": "centipawn",
+            "value": -14
+        },
+        {
+            "type": "centipawn",
+            "value": -16
+        },
+        {
+            "type": "centipawn",
+            "value": -14
+        },
+        {
+            "type": "centipawn",
+            "value": -42
+        },
+        {
+            "type": "centipawn",
+            "value": -46
+        },
+        {
+            "type": "centipawn",
+            "value": -51
+        },
+        {
+            "type": "centipawn",
+            "value": -39
+        },
+        {
+            "type": "centipawn",
+            "value": -57
+        },
+        {
+            "type": "centipawn",
+            "value": -63
+        },
+        {
+            "type": "centipawn",
+            "value": -59
+        },
+        {
+            "type": "centipawn",
+            "value": -53
+        },
+        {
+            "type": "centipawn",
+            "value": -68
+        },
+        {
+            "type": "centipawn",
+            "value": -41
+        },
+        {
+            "type": "centipawn",
+            "value": -180
+        },
+        {
+            "type": "centipawn",
+            "value": -187
+        },
+        {
+            "type": "centipawn",
+            "value": -224
+        },
+        {
+            "type": "centipawn",
+            "value": -246
+        },
+        {
+            "type": "centipawn",
+            "value": -254
+        },
+        {
+            "type": "centipawn",
+            "value": -289
+        },
+        {
+            "type": "centipawn",
+            "value": -462
+        },
+        {
+            "type": "centipawn",
+            "value": -449
+        },
+        {
+            "type": "centipawn",
+            "value": -774
+        },
+        {
+            "type": "centipawn",
+            "value": -791
+        }
+    ]
+]
