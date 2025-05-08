@@ -16,16 +16,17 @@ engine.configure({
     "WeightsFile": "/home/simonari/build/lc0/build/release/bt4-1740.pb"
 })
 
-# Define your FEN
-fen = "r1bqkbnr/pppppppp/n7/8/8/N7/PPPPPPPP/R1BQKBNR w KQkq - 0 1"
-board = chess.Board(fen)
-turn = board.turn
+all_fens = ["r1bqkbnr/pppppppp/n7/8/8/N7/PPPPPPPP/R1BQKBNR w KQkq - 0 1", "rnbqkb1r/pppppppp/8/8/8/8/PPPPPPPP/RNBQKB1R w KQkq - 0 1", "rnbqkb1r/pppppppp/8/8/8/8/PPPPPPPP/RNBQKB1R w KQkq - 0 1"]
+evals = []
 
-# Run analysis
-info = engine.analyse(board, chess.engine.Limit(nodes=1000))
-score = info["score"].pov(turn).score()
+for fen in all_fens:
+    board = chess.Board(fen)
+    turn = board.turn
 
-# Show the score and best move
-print("Evaluation (relative):", score)
+    info = engine.analyse(board, chess.engine.Limit(nodes=1000))
+    score = info["score"].pov(turn).score()
 
+    evals.append(score)
 engine.quit()
+
+print("Evaluations:", evals)
