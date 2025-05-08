@@ -1,5 +1,6 @@
 import chess
 import chess.engine
+import csv
 
 # Path to your lc0 binary (compiled with GPU support)
 LC0_PATH = "/home/simonari/build/lc0/build/release/lc0"
