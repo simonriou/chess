@@ -22,7 +22,7 @@ all_fens = ["rnb1kbn1/pppppppp/8/8/2B1P3/8/PPPP1PPP/RNBQK1NR w KQq - 0 1", "4kn1
 with open("scores.csv", "w") as f:
     writer = csv.writer(f)
     writer.writerow(["evaluation"])
-    for fen in fens:
+    for fen in all_fens:
         board = chess.Board(fen)
         turn = board.turn
 
