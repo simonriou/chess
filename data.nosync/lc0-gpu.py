@@ -17,21 +17,23 @@ engine.configure({
 })
 
 all_fens = ["rnb1kbn1/pppppppp/8/8/2B1P3/8/PPPP1PPP/RNBQK1NR w KQq - 0 1", "4kn1r/pQ3ppp/8/8/1B6/8/PPPPPPPP/RN2KBNR w KQk - 0 1", "rnbqkb1r/pppppppp/8/8/8/8/PPPPPPPP/RNBQKB1R w KQkq - 0 1"]
-evals = []
 
-for fen in all_fens:
-    board = chess.Board(fen)
-    turn = board.turn
+with open("scores.csv", "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(["evaluation"])
+    for fen in fens:
+        board = chess.Board(fen)
+        turn = board.turn
 
-    info = engine.analyse(board, chess.engine.Limit(nodes=1000))
-    raw_score = info['score']
+        info = engine.analyse(board, chess.engine.Limit(nodes=500))
+        raw_score = info['score']
 
-    if raw_score.is_mate():
-        score = 100000 if raw_score.pov(turn).mate() > 0 else -100000
-    else:
-        score = raw_score.pov(turn).score()
+        if raw_score.is_mate():
+            score = 100000 if raw_score.pov(turn).mate() > 0 else -100000
+        else:
+            score = raw_score.pov(turn).score()
 
-    evals.append(score)
+        writer.writerow([score])
 engine.quit()
 
 print("Evaluations:", evals)
