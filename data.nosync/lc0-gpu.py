@@ -16,7 +16,7 @@ engine.configure({
     "WeightsFile": "/home/simonari/build/lc0/build/release/bt4-1740.pb"
 })
 
-all_fens = ["r1bqkbnr/pppppppp/n7/8/8/N7/PPPPPPPP/R1BQKBNR w KQkq - 0 1", "rnbqkb1r/pppppppp/8/8/8/8/PPPPPPPP/RNBQKB1R w KQkq - 0 1", "rnbqkb1r/pppppppp/8/8/8/8/PPPPPPPP/RNBQKB1R w KQkq - 0 1"]
+all_fens = ["rnb1kbn1/pppppppp/8/8/2B1P3/8/PPPP1PPP/RNBQK1NR w KQq - 0 1", "rnbqkb1r/pppppppp/8/8/8/8/PPPPPPPP/RNBQKB1R w KQkq - 0 1", "rnbqkb1r/pppppppp/8/8/8/8/PPPPPPPP/RNBQKB1R w KQkq - 0 1"]
 evals = []
 
 for fen in all_fens:
