@@ -24,7 +24,12 @@ for fen in all_fens:
     turn = board.turn
 
     info = engine.analyse(board, chess.engine.Limit(nodes=1000))
-    score = info["score"].pov(turn).score()
+    raw_score = info['score']
+
+    if raw_score.is_mate():
+        score = 100000 if raw_score.pov(turn).mate() > 0 else -100000
+    else:
+        score = raw_score.pov(turn).score()
 
     evals.append(score)
 engine.quit()
