@@ -19,12 +19,13 @@ engine.configure({
 # Define your FEN
 fen = "r1bqkbnr/pppppppp/n7/8/8/N7/PPPPPPPP/R1BQKBNR w KQkq - 0 1"
 board = chess.Board(fen)
+turn = board.turn
 
 # Run analysis
 info = engine.analyse(board, chess.engine.Limit(nodes=1000))
+score = info["score"].pov(turn).score()
 
 # Show the score and best move
-print("Score:", info["score"])
-print("Best move:", info["pv"][0])
+print("Evaluation (relative):", score)
 
 engine.quit()
