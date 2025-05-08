@@ -17,7 +17,7 @@ engine.configure({
 })
 
 # Import fens from input/sample_features.csv (header "FEN")
-with open("input/sample_features.csv", "r") as f:
+with open("input/features.csv", "r") as f:
     reader = csv.DictReader(f)
     all_fens = [row["FEN"] for row in reader]
 
