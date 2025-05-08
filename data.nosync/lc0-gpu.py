@@ -12,7 +12,7 @@ engine = chess.engine.SimpleEngine.popen_uci(LC0_PATH)
 # Example (you may or may not need this depending on how lc0 is compiled):
 engine.configure({
     "Threads": 1,
-    "Backend": "cuda",
+    "Backend": "cuda-fp16",
     "WeightsFile": "/home/simonari/build/lc0/build/release/bt4-1740.pb"
 })
 
