@@ -1,7 +1,7 @@
 import pandas as pd
 
-fens_file = '../data.nosync/input/features.csv'  # Path to the first CSV file
-evals_file = '../data.nosync/input/scores.csv'  # Path to the second CSV file
+fens_file = '../data.nosync/input/final/features.csv'
+evals_file = '../data.nosync/input/temp/scores_normalized.csv'
 
 # Load the CSV files
 fens_df = pd.read_csv(fens_file)
