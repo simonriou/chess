@@ -68,7 +68,8 @@ def fen_to_input_tensor(fen: str):
     return input_tensor
 
 def save_to_tfrecord(tensors, file_name):
-    with tf.io.TFRecordWriter(file_name) as writer:
+    options = tf.io.TFRecordOptions(compression_type="GZIP")
+    with tf.io.TFRecordWriter(file_name, options=options) as writer:
         for tensor in tensors:
             # Serialize the tensor into a tf.train.Example
             example = tf.train.Example(features=tf.train.Features(feature={

@@ -15,7 +15,7 @@ def _parse_function(example_proto):
     return tf.io.parse_single_example(example_proto, feature_description)
 
 def load_first_tensor(tfrecord_path):
-    raw_dataset = tf.data.TFRecordDataset(tfrecord_path)
+    raw_dataset = tf.data.TFRecordDataset(tfrecord_path, compression_type='GZIP')
     parsed_dataset = raw_dataset.map(_parse_function)
     
     for parsed_record in parsed_dataset.take(1):
