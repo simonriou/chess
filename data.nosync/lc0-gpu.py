@@ -44,7 +44,7 @@ with open(output_path, "a", newline="") as f:
         board = chess.Board(fen)
         turn = board.turn
 
-        info = engine.analyse(board, chess.engine.Limit(nodes=500))
+        info = engine.analyse(board, chess.engine.Limit(nodes=300))
         raw_score = info["score"]
 
         if raw_score.is_mate():
