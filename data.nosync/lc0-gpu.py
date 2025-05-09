@@ -5,6 +5,7 @@ from tqdm import tqdm  # Progress bar
 
 # Path to your lc0 binary (compiled with GPU support)
 LC0_PATH = "/home/simonari/build/lc0/build/release/lc0"
+output_path = "input/scores.csv"
 
 # Launch the engine
 engine = chess.engine.SimpleEngine.popen_uci(LC0_PATH)
@@ -21,15 +22,26 @@ with open("input/features.csv", "r") as f:
     reader = csv.DictReader(f)
     all_fens = [row["FEN"] for row in reader]
 
-with open("input/scores.csv", "w") as f:
+# Determine how many FENs have already been evaluated
+if os.path.exists(output_path):
+    with open(output_path, "r") as f:
+        evaluated_lines = sum(1 for _ in f) - 1  # exclude header
+else:
+    evaluated_lines = 0
+
+with open(output_path, "a", newline="") as f:
     writer = csv.writer(f)
-    writer.writerow(["evaluation"])
-    for fen in tqdm(all_fens, desc="Evaluating FENs"):
+
+    if evaluated_lines == 0:
+        writer.writerow(["evaluation"])
+
+    for i in tqdm(range(evaluated_lines, len(all_fens)), desc="Evaluating FENs"):
+        fen = all_fens[i]
         board = chess.Board(fen)
         turn = board.turn
 
         info = engine.analyse(board, chess.engine.Limit(nodes=500))
-        raw_score = info['score']
+        raw_score = info["score"]
 
         if raw_score.is_mate():
             score = 100000 if raw_score.pov(turn).mate() > 0 else -100000
