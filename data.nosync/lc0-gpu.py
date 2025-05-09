@@ -1,7 +1,8 @@
 import chess
 import chess.engine
 import csv
-from tqdm import tqdm  # Progress bar
+from tqdm import tqdm
+import os
 
 # Path to your lc0 binary (compiled with GPU support)
 LC0_PATH = "/home/simonari/build/lc0/build/release/lc0"
