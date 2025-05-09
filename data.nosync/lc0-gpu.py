@@ -33,7 +33,10 @@ with open(output_path, "a", newline="") as f:
     writer = csv.writer(f)
 
     if evaluated_lines == 0:
+        print("Evaluating FENs from the beginning...")
         writer.writerow(["evaluation"])
+
+    print(f"Evaluating FENs from {evaluated_lines} to {len(all_fens)}")
 
     for i in tqdm(range(evaluated_lines, len(all_fens)), desc="Evaluating FENs"):
         fen = all_fens[i]
