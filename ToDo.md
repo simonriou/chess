@@ -1,0 +1,11 @@
+- Reweight the loss:
+    - use weighted MSE giving higher weight to extreme values
+    - use Hubber loss to balance MSE & MAE
+- Stratified sampling:
+    - ensure each batch has a good ditribution of values
+- Rescale the target:
+    - transform output to amplify distinctions (e.g. sigmoid mapping [-1, 1] and train to predict sigmoid-transformed)
+- Regular eval:
+    - log predictions on a fixed val set after every epoch to detect regressions
+- Output layer:
+    - ensure last layer is linear!!
