@@ -116,5 +116,9 @@ def main():
     # Optionally save the model
     model.save("chess_eval_model.keras")
 
+    for x, y_true in val_ds.take(10):
+        y_pred = model.predict(x)
+        print(f"True: {y_true.numpy()}, Pred: {y_pred}")
+
 if __name__ == "__main__":
     main()
