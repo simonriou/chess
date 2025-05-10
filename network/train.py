@@ -101,11 +101,16 @@ def main():
         patience=5, restore_best_weights=True
     )
 
+    steps_per_epoch = total_examples // BATCH_SIZE
+
     model.fit(
         train_ds,
         validation_data=val_ds,
         epochs=EPOCHS,
-        callbacks=[lr_scheduler, early_stop]
+        callbacks=[lr_scheduler, early_stop],
+        steps_per_epoch=steps_per_epoch,
+        validation_steps=total_examples // BATCH_SIZE,
+        verbose=1,
     )
 
     # Optionally save the model
