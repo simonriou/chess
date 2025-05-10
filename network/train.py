@@ -69,7 +69,7 @@ def build_model():
     
     x = tf.keras.layers.GlobalAveragePooling2D()(x)
     x = tf.keras.layers.Dense(64, activation='relu')(x)
-    outputs = tf.keras.layers.Dense(1, activation='tanh')(x)
+    outputs = tf.keras.layers.Dense(1, activation='linear')(x)
 
     return tf.keras.Model(inputs, outputs)
 

@@ -7,7 +7,8 @@ OUTPUT_TFRECORD = '../data.nosync/input/temp/merged_features.tfrecord'
 
 TENSOR_SHAPE = (8, 8, 19)
 
-evals = pd.read_csv(EVALS_CSV, skiprows=1, header=None).squeeze().astype('float32').tolist()
+# Load only the 'evaluation' column
+evals = pd.read_csv(EVALS_CSV)['evaluation'].astype('float32').tolist()
 assert isinstance(evals, list)
 
 options = tf.io.TFRecordOptions(compression_type="GZIP")

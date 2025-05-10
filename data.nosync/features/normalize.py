@@ -26,7 +26,7 @@ def denormalize_eval(norm_eval, max_cp=20000, mate_score=100000):
 
 if __name__ == "__main__":
     # Import current scores
-    eval_df = pd.read_csv('input/temp/scores.csv')
+    eval_df = pd.read_csv('input/temp/filtered_scores.csv')
 
     # Normalize evaluation scores
     eval_df['evaluation'] = eval_df['evaluation'].astype(float)

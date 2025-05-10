@@ -1,36 +1,31 @@
-import tensorflow as tf
-import numpy as np
+import pandas as pd
 
-TFRECORD_FILE = '../data.nosync/input/temp/merged_features.tfrecord'  # Path to your merged TFRecord
-TENSOR_SHAPE = (8, 8, 19)          # Adapt to match your encoding
+# Load the CSV files
+features_df = pd.read_csv('../data.nosync/input/final/features.csv')  # contains column 'FEN'
+scores_df = pd.read_csv('../data.nosync/input/temp/scores_normalized.csv')  # contains columns 'evaluation' and 'index'
+merged_df = pd.read_csv('../data.nosync/input/temp/merged_fens_evals.csv')  # contains columns 'FEN' and 'eval'
 
-# Define feature schema
-feature_description = {
-    'tensor': tf.io.FixedLenFeature([], tf.string),
-    'eval': tf.io.FixedLenFeature([], tf.float32),
-}
+# Sanity check: ensure merged_df and scores_df have the same length
+if len(scores_df) != len(merged_df):
+    print(f"Length mismatch: scores_normalized.csv has {len(scores_df)} rows, "
+          f"but merged_fens_evals.csv has {len(merged_df)} rows.")
 
-def parse_example(example_proto):
-    parsed = tf.io.parse_single_example(example_proto, feature_description)
-    tensor = tf.io.parse_tensor(parsed['tensor'], out_type=tf.float32)
-    tensor = tf.reshape(tensor, TENSOR_SHAPE)
-    return tensor, parsed['eval']
+# Check for mismatches
+mismatches = []
 
-# Load TFRecord
-dataset = tf.data.TFRecordDataset(TFRECORD_FILE, compression_type='GZIP')
-dataset = dataset.map(parse_example)
+for i, (merged_row, score_row) in enumerate(zip(merged_df.itertuples(index=False), scores_df.itertuples(index=False))):
+    fen_index = score_row.index
+    true_fen = features_df.iloc[fen_index].FEN
+    merged_fen = merged_row.FEN
+    if true_fen != merged_fen:
+        mismatches.append((i, fen_index, merged_fen, true_fen))
 
-# Inspect first N samples
-N = 5
-for i, (tensor, eval_score) in enumerate(dataset.take(N)):
-    tensor_np = tensor.numpy()
-    print(f"--- Sample {i+1} ---")
-    print(f"Eval: {eval_score.numpy():.4f}")
-    print(f"Tensor shape: {tensor_np.shape}")
-    print(f"Tensor min/max: {tensor_np.min():.2f} / {tensor_np.max():.2f}")
-    print(f"Tensor mean: {tensor_np.mean():.4f}")
-    print("Slice (first 8x8 plane):")
-    print(tensor_np[:, :, 0])
-    print()
-
-print(f"✅ Successfully read and parsed {N} entries.")
+# Output results
+if mismatches:
+    print(f"Found {len(mismatches)} mismatches:")
+    for i, idx, merged_fen, true_fen in mismatches[:10]:  # Show only first 10 mismatches
+        print(f"Row {i}: Index {idx} -> Merged FEN: {merged_fen} | Expected FEN: {true_fen}")
+    if len(mismatches) > 10:
+        print("... (more mismatches not shown)")
+else:
+    print("All FENs in the merged file match the expected FENs.")

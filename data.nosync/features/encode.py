@@ -82,7 +82,7 @@ def save_to_tfrecord(tensors, file_name):
 
 def main():
     # Load the FENs from the merged CSV file
-    features_file = 'input/temp/merged_fens_evals.csv'
+    features_file = '../input/temp/merged_fens_evals.csv'
     df = pd.read_csv(features_file)
     fens = df['FEN'].tolist()
     evaluations = df['eval'].tolist()
@@ -93,7 +93,7 @@ def main():
     print(f"Converted {len(tensors)} FENs to tensors")
 
     # Save the tensors to a TFRecord file
-    save_to_tfrecord(tensors, 'input/temp/merged_fens_evals.tfrecord')
+    save_to_tfrecord(tensors, '../input/temp/encoded_features.tfrecord')
 
 if __name__ == "__main__":
     main()
