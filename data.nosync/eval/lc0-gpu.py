@@ -6,7 +6,7 @@ import os
 
 # Path to your lc0 binary (compiled with GPU support)
 LC0_PATH = "/home/simonari/build/lc0/build/release/lc0"
-output_path = "input/scores.csv"
+output_path = "../input/scores.csv"
 
 # Launch the engine
 engine = chess.engine.SimpleEngine.popen_uci(LC0_PATH)
