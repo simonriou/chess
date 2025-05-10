@@ -8,8 +8,8 @@ print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 # ==========================
 BATCH_SIZE = 256
 LEARNING_RATE = 1e-3
-EPOCHS = 50
-TRAIN_SPLIT = 0.95
+EPOCHS = 500
+TRAIN_SPLIT = 0.80
 AUTOTUNE = tf.data.AUTOTUNE
 INPUT_SHAPE = (8, 8, 19)  # Height, Width, Channels
 
@@ -116,7 +116,7 @@ def main():
     # Optionally save the model
     model.save("chess_eval_model.keras")
 
-    for x, y_true in val_ds.take(10):
+    for x, y_true in val_ds.take(2):
         y_pred = model.predict(x)
         print(f"True: {y_true.numpy()}, Pred: {y_pred}")
 
