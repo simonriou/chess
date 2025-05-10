@@ -7,7 +7,7 @@ import os
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data.nosync')))
 
-from encode import fen_to_input_tensor
+from features.encode import fen_to_input_tensor
 
 def denormalize_eval(norm_eval, max_cp=20000, mate_score=100000):
     if norm_eval >= 1.0:
@@ -35,7 +35,7 @@ def load_model():
 # ==========================
 def evaluate_random_fen(model):
     # Generate a random position (FEN)
-    random_fen = "8/3k4/3r4/8/1BQQRQ1Q/5K2/8/8 w - - 0 1"  # This generates a starting position, for now (can replace with random generation)
+    random_fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/R3K2R w KQkq - 0 1"  # This generates a starting position, for now (can replace with random generation)
     
     # Convert FEN to input tensor
     input_tensor = np.transpose(fen_to_input_tensor(random_fen), (1, 2, 0))

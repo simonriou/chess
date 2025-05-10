@@ -3,11 +3,17 @@ import os
 
 print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 
+def sign_sensitive_mse(y_true, y_pred):
+    mse = tf.square(y_true - y_pred)
+    sign_mismatch = tf.cast(tf.math.sign(y_true) != tf.math.sign(y_pred), tf.float32)
+    penalty = 1.0 + 4.0 * sign_mismatch  # Tune the multiplier
+    return mse * penalty
+
 # ==========================
 # Parameters
 # ==========================
 BATCH_SIZE = 256
-LEARNING_RATE = 1e-5
+LEARNING_RATE = 1e-4
 EPOCHS = 500
 TRAIN_SPLIT = 0.80
 AUTOTUNE = tf.data.AUTOTUNE
@@ -89,7 +95,7 @@ def main():
     model = build_model()
     model.compile(
         optimizer=tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE, weight_decay=1e-5, clipnorm=1.0),
-        loss='mse',
+        loss=sign_sensitive_mse,
         metrics=['mae']
     )
 
@@ -98,7 +104,7 @@ def main():
     )
 
     early_stop = tf.keras.callbacks.EarlyStopping(
-        patience=5, restore_best_weights=True, verbose=1
+        patience=10, restore_best_weights=True, verbose=1
     )
 
     steps_per_epoch = total_examples // BATCH_SIZE
