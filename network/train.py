@@ -78,7 +78,7 @@ def build_model():
 # ==========================
 def main():
     tfrecord_files = ["../data.nosync/input/temp/merged_features.tfrecord"]
-    total_examples = 102607
+    total_examples = 54984
 
     raw_dataset = load_dataset(tfrecord_files)
     train_raw, val_raw = split_dataset(raw_dataset, total_examples, TRAIN_SPLIT)
