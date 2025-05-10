@@ -1,4 +1,5 @@
 import tensorflow as tf
+from tensorflow.keras import regularizers
 import os
 
 print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
@@ -63,13 +64,23 @@ def prepare_dataset(ds):
 # ==========================
 def build_model():
     inputs = tf.keras.Input(shape=INPUT_SHAPE)
-    x = tf.keras.layers.Conv2D(128, (3, 3), padding='same', activation='relu', kernel_initializer='he_normal')(inputs)
+    x = tf.keras.layers.Conv2D(
+        128, (3, 3), padding='same', activation='relu', 
+        kernel_initializer='he_normal',
+        kernel_regularizer=regularizers.l2(1e-4)  # Add L2 regularization
+    )(inputs)
     
-    # Residual blocks
+    # Residual blocks with regularization
     for _ in range(10):
         shortcut = x
-        x = tf.keras.layers.Conv2D(128, (3, 3), padding='same', activation='relu')(x)
-        x = tf.keras.layers.Conv2D(128, (3, 3), padding='same')(x)
+        x = tf.keras.layers.Conv2D(
+            128, (3, 3), padding='same', activation='relu',
+            kernel_regularizer=regularizers.l2(1e-4)  # Add L2 regularization
+        )(x)
+        x = tf.keras.layers.Conv2D(
+            128, (3, 3), padding='same',
+            kernel_regularizer=regularizers.l2(1e-4)  # Add L2 regularization
+        )(x)
         x = tf.keras.layers.Add()([x, shortcut])
         x = tf.keras.layers.Activation('relu')(x)
     
