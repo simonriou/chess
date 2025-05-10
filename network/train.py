@@ -7,7 +7,7 @@ print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 # Parameters
 # ==========================
 BATCH_SIZE = 256
-LEARNING_RATE = 1e-3
+LEARNING_RATE = 1e-5
 EPOCHS = 500
 TRAIN_SPLIT = 0.80
 AUTOTUNE = tf.data.AUTOTUNE
@@ -57,7 +57,7 @@ def prepare_dataset(ds):
 # ==========================
 def build_model():
     inputs = tf.keras.Input(shape=INPUT_SHAPE)
-    x = tf.keras.layers.Conv2D(128, (3, 3), padding='same', activation='relu')(inputs)
+    x = tf.keras.layers.Conv2D(128, (3, 3), padding='same', activation='relu', kernel_initializer='he_normal')(inputs)
     
     # Residual blocks
     for _ in range(10):
@@ -88,7 +88,7 @@ def main():
 
     model = build_model()
     model.compile(
-        optimizer=tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE),
+        optimizer=tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE, weight_decay=1e-5, clipnorm=1.0),
         loss='mse',
         metrics=['mae']
     )
@@ -98,7 +98,7 @@ def main():
     )
 
     early_stop = tf.keras.callbacks.EarlyStopping(
-        patience=5, restore_best_weights=True
+        patience=5, restore_best_weights=True, verbose=1
     )
 
     steps_per_epoch = total_examples // BATCH_SIZE
@@ -115,10 +115,6 @@ def main():
 
     # Optionally save the model
     model.save("chess_eval_model.keras")
-
-    for x, y_true in val_ds.take(2):
-        y_pred = model.predict(x)
-        print(f"True: {y_true.numpy()}, Pred: {y_pred}")
 
 if __name__ == "__main__":
     main()
