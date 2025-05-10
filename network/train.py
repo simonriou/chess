@@ -39,9 +39,9 @@ def load_dataset(filenames):
 # Create Train/Val Splits
 # ==========================
 def split_dataset(dataset, total_size, train_ratio):
-    dataset = dataset.shuffle(buffer_size=total_size, reshuffle_each_iteration=True)
-    dataset = dataset.cache()
     train_size = int(total_size * train_ratio)
+    val_size = total_size - train_size
+    dataset = dataset.shuffle(buffer_size=total_size, reshuffle_each_iteration=True)
     train_ds = dataset.take(train_size)
     val_ds = dataset.skip(train_size)
     return train_ds, val_ds
@@ -50,7 +50,7 @@ def split_dataset(dataset, total_size, train_ratio):
 # Prepare Datasets
 # ==========================
 def prepare_dataset(ds):
-    return ds.cache().batch(BATCH_SIZE).prefetch(AUTOTUNE)
+    return ds.cache().batch(BATCH_SIZE).repeat().prefetch(AUTOTUNE)
 
 # ==========================
 # Model Architecture
