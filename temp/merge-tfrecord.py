@@ -2,7 +2,7 @@ import tensorflow as tf
 import pandas as pd
 
 INPUT_TFRECORD = '../data.nosync/input/temp/encoded_features.tfrecord'
-EVALS_CSV = '../data.nosync/input/temp/scores.csv'
+EVALS_CSV = '../data.nosync/input/temp/scores_normalized.csv'
 OUTPUT_TFRECORD = '../data.nosync/input/temp/merged_features.tfrecord'
 
 TENSOR_SHAPE = (8, 8, 19)
