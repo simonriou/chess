@@ -1,15 +1,9 @@
 import tensorflow as tf
 from tensorflow.keras import regularizers
 import os
-from tensorflow.keras.utils import register_keras_serializable
+from loss-functions import loss_fn
 
 print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
-
-@register_keras_serializable()
-def loss_fn(y_true, y_pred):
-    y_true = tf.expand_dims(y_true, axis=-1)
-    y_pred = tf.expand_dims(y_pred, axis=-1)
-    return tf.keras.losses.cosine_similarity(y_true, y_pred, axis=-1)
 
 # ==========================
 # Parameters

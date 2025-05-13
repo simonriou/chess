@@ -4,6 +4,7 @@ import chess
 import numpy as np
 import sys
 import os
+from loss_functions import loss_fn
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data.nosync')))
 
@@ -27,7 +28,7 @@ MODEL_PATH = '../models/chess_eval_model.keras'  # Path to your saved model
 # Load Model
 # ==========================
 def load_model():
-    model = tf.keras.models.load_model(MODEL_PATH)
+    model = tf.keras.models.load_model(MODEL_PATH, custom_objects={'loss_fn': loss_fn})
     return model
 
 # ==========================
@@ -35,7 +36,7 @@ def load_model():
 # ==========================
 def evaluate_random_fen(model):
     # Generate a random position (FEN)
-    random_fen = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/R3K2R w KQkq - 0 1"  # This generates a starting position, for now (can replace with random generation)
+    random_fen = "3q4/2qkq3/8/3K4/8/3Q4/4Q3/1Q6 w - - 0 1"  # This generates a starting position, for now (can replace with random generation)
     
     # Convert FEN to input tensor
     input_tensor = np.transpose(fen_to_input_tensor(random_fen), (1, 2, 0))
