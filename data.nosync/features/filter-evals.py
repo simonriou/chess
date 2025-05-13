@@ -38,7 +38,7 @@ def filter_eval_indices(df, eval_column='evaluation', threshold=5000, ratio=0.5)
     return selected_indices
 
 def main():
-    df = pd.read_csv('input/latest_scores.csv')
+    df = pd.read_csv('../input/latest_scores.csv')
     df = df[df['evaluation'] != 0]
 
     # Filter evaluations
@@ -50,7 +50,7 @@ def main():
     filtered_df['evaluation'] = filtered_df['evaluation'].round(2)
     
     # Save the filtered DataFrame to a new CSV file
-    filtered_df.to_csv('input/temp/filtered_scores.csv', index=False)
+    filtered_df.to_csv('../input/temp/filtered_scores.csv', index=False)
 
 
 if __name__ == "__main__":

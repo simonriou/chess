@@ -26,12 +26,12 @@ def denormalize_eval(norm_eval, max_cp=20000, mate_score=100000):
 
 if __name__ == "__main__":
     # Import current scores
-    eval_df = pd.read_csv('input/temp/filtered_scores.csv')
+    eval_df = pd.read_csv('../input/temp/filtered_scores.csv')
 
     # Normalize evaluation scores
     eval_df['evaluation'] = eval_df['evaluation'].astype(float)
     eval_df['evaluation'] = eval_df['evaluation'].apply(normalize_eval)
 
     # Save normalized scores
-    eval_df.to_csv('input/temp/scores_normalized.csv', index=False)
-    print("Normalized evaluation scores saved to .input/temp/scores_normalized.csv")
+    eval_df.to_csv('../input/temp/scores_normalized.csv', index=False)
+    print("Normalized evaluation scores saved to ../input/temp/scores_normalized.csv")
