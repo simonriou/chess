@@ -36,7 +36,7 @@ def load_model():
 # ==========================
 def evaluate_random_fen(model):
     # Generate a random position (FEN)
-    random_fen = "3q4/2qkq3/8/3K4/8/3Q4/4Q3/1Q6 w - - 0 1"  # This generates a starting position, for now (can replace with random generation)
+    random_fen = "8/3k4/8/8/4KQ2/8/8/8 w - - 0 1"  # This generates a starting position, for now (can replace with random generation)
     
     # Convert FEN to input tensor
     input_tensor = np.transpose(fen_to_input_tensor(random_fen), (1, 2, 0))

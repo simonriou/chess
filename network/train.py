@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow.keras import regularizers
 import os
-from loss-functions import loss_fn
+from loss_functions import loss_fn
 
 print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 
@@ -57,29 +57,67 @@ def prepare_dataset(ds):
 # ==========================
 # Model Architecture
 # ==========================
+def residual_block(x, filters, downsample=False):
+    shortcut = x
+
+    stride = 2 if downsample else 1
+
+    # First conv
+    x = tf.keras.layers.Conv2D(
+        filters, (3, 3), strides=stride, padding='same', activation=None,
+        kernel_initializer='he_normal',
+        kernel_regularizer=regularizers.l2(1e-4)
+    )(x)
+    x = tf.keras.layers.BatchNormalization()(x)
+    x = tf.keras.layers.Activation('relu')(x)
+
+    # Second conv
+    x = tf.keras.layers.Conv2D(
+        filters, (3, 3), padding='same', activation=None,
+        kernel_initializer='he_normal',
+        kernel_regularizer=regularizers.l2(1e-4)
+    )(x)
+    x = tf.keras.layers.BatchNormalization()(x)
+
+    # Adjust shortcut if dimensions differ
+    if downsample or shortcut.shape[-1] != filters:
+        shortcut = tf.keras.layers.Conv2D(
+            filters, (1, 1), strides=stride, padding='same', activation=None,
+            kernel_initializer='he_normal',
+            kernel_regularizer=regularizers.l2(1e-4)
+        )(shortcut)
+        shortcut = tf.keras.layers.BatchNormalization()(shortcut)
+
+    x = tf.keras.layers.Add()([x, shortcut])
+    x = tf.keras.layers.Activation('relu')(x)
+    return x
+
 def build_model():
     inputs = tf.keras.Input(shape=INPUT_SHAPE)
+
+    # Initial conv
     x = tf.keras.layers.Conv2D(
-        128, (3, 3), padding='same', activation='relu', 
+        64, (3, 3), padding='same', activation=None,
         kernel_initializer='he_normal',
-        kernel_regularizer=regularizers.l2(1e-4)  # Add L2 regularization
+        kernel_regularizer=regularizers.l2(1e-4)
     )(inputs)
-    
-    # Residual blocks with regularization
-    for _ in range(10):
-        shortcut = x
-        x = tf.keras.layers.Conv2D(
-            128, (3, 3), padding='same', activation='relu',
-            kernel_regularizer=regularizers.l2(1e-4)  # Add L2 regularization
-        )(x)
-        x = tf.keras.layers.Conv2D(
-            128, (3, 3), padding='same',
-            kernel_regularizer=regularizers.l2(1e-4)  # Add L2 regularization
-        )(x)
-        x = tf.keras.layers.Add()([x, shortcut])
-        x = tf.keras.layers.Activation('relu')(x)
-    
+    x = tf.keras.layers.BatchNormalization()(x)
+    x = tf.keras.layers.Activation('relu')(x)
+
+    # Residual blocks with increasing filters
+    x = residual_block(x, 64)
+    x = residual_block(x, 64)
+    x = residual_block(x, 128, downsample=True)
+    x = residual_block(x, 128)
+    x = residual_block(x, 256, downsample=True)
+    x = residual_block(x, 256)
+    x = residual_block(x, 512, downsample=True)
+    x = residual_block(x, 512)
+
+    # Global pooling and dense head
     x = tf.keras.layers.GlobalAveragePooling2D()(x)
+    x = tf.keras.layers.Dense(128, activation='relu')(x)
+    x = tf.keras.layers.Dropout(0.3)(x)
     x = tf.keras.layers.Dense(64, activation='relu')(x)
     outputs = tf.keras.layers.Dense(1, activation='linear')(x)
 
