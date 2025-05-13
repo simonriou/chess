@@ -1,11 +1,15 @@
 import tensorflow as tf
 from tensorflow.keras import regularizers
 import os
+from tensorflow.keras.utils import register_keras_serializable
 
 print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 
-# Use built-in Huber loss with optional delta (default is 1.0)
-loss_fn = tf.keras.losses.Huber(delta=0.5)  # You can tune delta
+@register_keras_serializable()
+def loss_fn(y_true, y_pred):
+    y_true = tf.expand_dims(y_true, axis=-1)
+    y_pred = tf.expand_dims(y_pred, axis=-1)
+    return tf.keras.losses.cosine_similarity(y_true, y_pred, axis=-1)
 
 # ==========================
 # Parameters
