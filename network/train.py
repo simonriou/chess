@@ -4,11 +4,8 @@ import os
 
 print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
 
-def sign_sensitive_mse(y_true, y_pred):
-    mse = tf.square(y_true - y_pred)
-    sign_mismatch = tf.cast(tf.math.sign(y_true) != tf.math.sign(y_pred), tf.float32)
-    penalty = 1.0 + 4.0 * sign_mismatch  # Tune the multiplier
-    return mse * penalty
+# Use built-in Huber loss with optional delta (default is 1.0)
+loss_fn = tf.keras.losses.Huber(delta=0.5)  # You can tune delta
 
 # ==========================
 # Parameters
@@ -95,7 +92,7 @@ def build_model():
 # ==========================
 def main():
     tfrecord_files = ["../data.nosync/input/temp/merged_features.tfrecord"]
-    total_examples = 54984
+    total_examples = 109384
 
     raw_dataset = load_dataset(tfrecord_files)
     train_raw, val_raw = split_dataset(raw_dataset, total_examples, TRAIN_SPLIT)
@@ -106,7 +103,7 @@ def main():
     model = build_model()
     model.compile(
         optimizer=tf.keras.optimizers.Adam(learning_rate=LEARNING_RATE, weight_decay=1e-5, clipnorm=1.0),
-        loss=sign_sensitive_mse,
+        loss=loss_fn,
         metrics=['mae']
     )
 
